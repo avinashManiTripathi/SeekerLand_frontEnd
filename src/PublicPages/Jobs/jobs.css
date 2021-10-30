@@ -11,7 +11,7 @@
   font-style: Poppins-Regular !important;
   color: black;
   font-weight: bold;
-    font-size: 14px;
+  font-size: 14px;
 }
 .job-card-inner h3 {
   font-style: Poppins-Light;
@@ -40,4 +40,18 @@
   margin: -3px 5px 2px 0px;
   font-size: 12px !important;
   border-radius: 0px !important;
+}
+
+.job-card-footer-icon {
+  margin: 0px 10px 0px 10px !important;
+  border: none;
+  font-size: 20px;
+  background: none;
+}
+
+.job-card-footer-icon .fa-star-o:hover {
+  background-color: brown;
+}
+.btn-apply:focus {
+  box-shadow: none !important;
 }
