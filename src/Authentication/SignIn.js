@@ -16,7 +16,7 @@ const SignIn = (props) => {
   };
 
   const handleLogin = () => {
-    history.push("/seeker/account");
+    history.push("my-account");
   };
   return (
     <Container >

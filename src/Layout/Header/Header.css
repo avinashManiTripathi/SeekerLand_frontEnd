@@ -25,18 +25,20 @@
   border-radius: 0px;
   padding: 1px 0px;
   font-weight: 600;
-  background-color: #06273e !important;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
   color: #ffffff !important;
 }
 
 .btn-signIn:hover {
-  background-color: #06273e !important;
+ 
   color: white !important;
   border: 1px solid white !important;
 }
 .btn-primary {
   color: #ffffff;
-  background-color: unset;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
   border-color: unset;
   border: unset;
 }

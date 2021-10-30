@@ -22,6 +22,7 @@
   color: rgb(63, 63, 63);
 } */
 .quick-links-wrapper .quick-links-inner .quick-links-inner-links {
+  margin: -20px 10px -10px 0px !important;
   text-decoration: none;
   font-size: 14px;
   color: rgb(63, 63, 63);
@@ -33,6 +34,7 @@
   width: 0;
   height: 1px;
   background: rgb(27, 27, 68);
+  margin: -20px 10px -10px 0px !important;
   transition: width 0.3s;
 }
 

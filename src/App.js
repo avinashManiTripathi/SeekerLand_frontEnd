@@ -9,6 +9,8 @@ import JobsDetails from "./PublicPages/Jobs/JobsDetails";
 import Recruiter from "./PublicPages/Recruiter/Recruiter";
 import SignIn from "./Authentication/SignIn";
 import MyAccount from "./Seeker/MyAccount";
+import SavedJobs from "./Seeker/SavedJobs";
+import AppliedJobs from "./Seeker/AppliedJobs";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path="/job-details" component={JobsDetails}></Route>
       <Route path="/recruiters" component={Recruiter}></Route>
       <Route path="/my-account" component={MyAccount}></Route>
+      <Route path="/applied_jobs" component={AppliedJobs}></Route>
+      <Route path="/saved_jobs" component={SavedJobs}></Route>
       <Footer />
     </BrowserRouter>
   );

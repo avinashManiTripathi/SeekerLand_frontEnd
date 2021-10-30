@@ -55,7 +55,7 @@ const Header = (props) => {
                   className="btn-signIn"
                 >
                   <Dropdown.Toggle id="dropdown-basic">
-                    <img src={userIcon} className="user-icon" alt="user-icon" />
+                   
                     My Account
                   </Dropdown.Toggle>
 

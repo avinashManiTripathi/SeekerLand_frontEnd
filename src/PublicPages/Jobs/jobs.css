@@ -8,8 +8,10 @@
   cursor: pointer;
 }
 .job-card-inner h2 {
-  font-style: Poppins-Light !important;
-  font-size: 14px;
+  font-style: Poppins-Regular !important;
+  color: black;
+  font-weight: bold;
+    font-size: 14px;
 }
 .job-card-inner h3 {
   font-style: Poppins-Light;
