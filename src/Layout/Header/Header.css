@@ -1,0 +1,53 @@
+.navbar-brand {
+  color: black;
+  font-weight: bold !important;
+}
+.nav-link-brand {
+  text-decoration: none;
+  color: black !important;
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+.nav-link {
+  padding: 10px 10px !important;
+  margin: 10px 0px !important;
+}
+.nav-link {
+  color: black;
+}
+.nav-link:hover {
+  color: black;
+}
+.btn-signIn {
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 1px 0px;
+  font-weight: 600;
+  background-color: #06273e !important;
+  color: #ffffff !important;
+}
+
+.btn-signIn:hover {
+  background-color: #06273e !important;
+  color: white !important;
+  border: 1px solid white !important;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: unset;
+  border-color: unset;
+  border: unset;
+}
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0px !important;
+  border: 0px !important;
+  color: #ffffff;
+}
+.user-icon {
+  height: 20px;
+  width: 20px;
+  color: white !important;
+}

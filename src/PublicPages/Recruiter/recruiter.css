@@ -1,0 +1,36 @@
+.profile-card {
+  font-family: Poppins-Regular;
+}
+
+.profile-card {
+  margin: 10px 0px;
+  padding: 20px 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background: #ffffff;
+}
+.profile-image img {
+  height: 150px;
+  width: 150px;
+}
+.profile-card-details {
+  align-items: center !important;
+}
+.profile-card-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile-card-details span {
+  font-size: 15px;
+}
+
+.profile-card-details .msg-button {
+  margin: 10px 5px;
+  font-weight: bold;
+  background: darkblue;
+  border-radius: 0px;
+  color: #fff;
+}
+.msg-button:hover {
+  transform: scaleX(1.1);
+  color: #ffffff !important;
+}

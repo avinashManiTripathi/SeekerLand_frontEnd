@@ -1,0 +1,26 @@
+.top-hiring-compaines-wrapper {
+  font-family: Poppins-Light;
+  padding: 20px 20px 70px 20px;
+}
+.top-hiring-compaines-wrapper h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.top-hiring-compaines-wrapper .top-hiring-companies-card {
+  display: flex;
+}
+.top-hiring-compaines-wrapper
+  .top-hiring-companies-card
+  .top-hiring-companies-card-body {
+  margin: 30px 10px 0px 10px;
+  padding: 10px 20px;
+  border: 1px solid #dee2e6 !important;
+  border-bottom: 3px solid red !important;
+  text-align: center;
+}
+.top-hiring-compaines-wrapper
+  .top-hiring-companies-card
+  .top-hiring-companies-card-body
+  h2 {
+  font-size: 13px;
+}

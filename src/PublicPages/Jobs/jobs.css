@@ -1,0 +1,41 @@
+.job-card-inner {
+  margin-left: 15px;
+  padding: 20px 5px;
+  font-style: Poppins-Light;
+}
+.job-card-wrapper {
+  margin: 0px 0px 10px 0px !important;
+  cursor: pointer;
+}
+.job-card-inner h2 {
+  font-style: Poppins-Light !important;
+  font-size: 14px;
+}
+.job-card-inner h3 {
+  font-style: Poppins-Light;
+  font-size: 13px;
+}
+.job-card-inner p {
+  margin: 5px 0px 0px 0px !important;
+  font-size: 13px;
+}
+.job-card-svl {
+  display: flex;
+}
+
+.job-card-svl span {
+  margin: 0px 100px 0px 0px !important;
+  display: flex;
+  font-size: 13px;
+}
+.job-card-svl span .fa {
+  margin: 3px 5px;
+  font-size: 14px;
+  color: #777777;
+}
+
+.btn-apply {
+  margin: -3px 5px 2px 0px;
+  font-size: 12px !important;
+  border-radius: 0px !important;
+}
