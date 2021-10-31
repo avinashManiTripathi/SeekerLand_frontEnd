@@ -4,7 +4,10 @@ import Search from '../../Component/Search';
 import { jobsData } from '../../jobsJSON';
 import Filter from '../../Layout/SideBar/Filter';
 
-import SideBar from '../../Layout/SideBar/SideBar';
+import SideBar, {
+  TopSideBarJobs,
+  TopSideBarMenu,
+} from '../../Layout/SideBar/SideBar';
 
 import {
   JobsbyCategory,
@@ -27,6 +30,7 @@ const Jobs = (props) => {
         <div className='row '>
           <div className='col-md-3 mt-4'>
             <Filter />
+            <TopSideBarMenu />
           </div>
           <div className='col-md-6 mt-4'>
             <div
@@ -62,6 +66,7 @@ const Jobs = (props) => {
             <SideBar data={JobsInTopLocations} />
             <SideBar data={JobsbyCategory} />
             <SideBar data={QuickLink} />
+            <TopSideBarJobs />
           </div>
         </div>
       </div>

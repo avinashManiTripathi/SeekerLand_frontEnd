@@ -3,7 +3,10 @@ import { Spinner, Button, Form } from 'react-bootstrap';
 import JobCards from '../../Component/JobCards';
 import { jobsData } from '../../jobsJSON';
 
-import SideBar, { TopSideBarJobs } from '../../Layout/SideBar/SideBar';
+import SideBar, {
+  TopSideBarJobs,
+  TopSideBarMenu,
+} from '../../Layout/SideBar/SideBar';
 import Slider from '../../Layout/Slider/Slider';
 import {
   JobsbyCategory,
@@ -106,7 +109,7 @@ const Home = (props) => {
             <JobCards data={jobsData} />
           </div>
           <div className='col-md-3'>
-            <TopSideBarJobs />
+            <TopSideBarMenu />
             <SideBar data={QuickLink} />
             <SideBar data={JobsbyCategory} />
             <SideBar data={JobsInTopLocations} />

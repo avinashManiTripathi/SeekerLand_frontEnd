@@ -4,7 +4,7 @@ import './filter.css';
 const Filter = (props) => {
   return (
     <section
-      className='sidebar bg-white shadow'
+      className='sidebar bg-white shadow mb-2'
       style={{
         padding: '20px 30px',
       }}>
@@ -91,7 +91,7 @@ const Filter = (props) => {
           </div>
         </form>
       </div>
-      <div class='py-2 ml-3'>
+      <div class='py-2  border-bottom ml-3'>
         <h6 class='font-weight-bold'>Job Type</h6>
         <div id='orange'>
           <span class='fa fa-minus'></span>
@@ -120,6 +120,56 @@ const Filter = (props) => {
             <label for='5off' id='off'>
               Premium MBA(1){' '}
             </label>
+          </div>
+        </form>
+      </div>
+
+      <div class='py-2 border-bottom ml-3'>
+        <h6 class='font-weight-bold'>Industries</h6>
+        <div id='orange'>
+          <span class='fa fa-minus'></span>
+        </div>
+        <form>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>Post Graduation(688)</label>{' '}
+          </div>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>Any Postgraduate(1033)</label>{' '}
+          </div>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>Any Graduate(547)</label>{' '}
+          </div>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>Management Consulting(8)</label>{' '}
+          </div>
+        </form>
+      </div>
+
+      <div class='py-2 border-bottom ml-3'>
+        <h6 class='font-weight-bold'>Top Companies</h6>
+        <div id='orange'>
+          <span class='fa fa-minus'></span>
+        </div>
+        <form>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>Virtusa (450)</label>{' '}
+          </div>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>TCS(320)</label>{' '}
+          </div>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>Wipro(320)</label>{' '}
+          </div>
+          <div class='form-group'>
+            <input type='checkbox' id='artisan' />{' '}
+            <label for='artisan'>HCL(540)</label>{' '}
           </div>
         </form>
       </div>
