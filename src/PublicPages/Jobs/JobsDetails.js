@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from '../../Layout/SideBar/SideBar';
+import SideBar, { TopSideBarJobs } from '../../Layout/SideBar/SideBar';
 import { JobsbyCategory, JobsInTopLocations } from '../../SiideBarJSON';
 import './jobs.css';
 
@@ -137,10 +137,11 @@ const JobsDetails = (props) => {
               <div className='row'>
                 <div className='col-md-3'>
                   <img
-                    src='https://media-exp1.licdn.com/dms/image/C5103AQFed6_BRhOgyg/profile-displayphoto-shrink_200_200/0/1526668638838?e=1640217600&v=beta&t=s3ygnbkB7SK9hEoJtXR9Q8CcAnv8Idcomqy-6cfXrvw'
+                    src='https://png.pngtree.com/png-clipart/20190924/original/pngtree-business-people-avatar-icon-user-profile-free-vector-png-image_4815126.jpg'
                     alt=''
                     class='img-circle img-responsive'
                     style={{
+                      width: '200px',
                       borderRadius: '50%',
                     }}
                   />
@@ -319,6 +320,7 @@ const JobsDetails = (props) => {
           </div>
         </div>
         <div className='col-md-3 mt-5'>
+          <TopSideBarJobs />
           <SideBar data={JobsbyCategory} />
           <SideBar data={JobsInTopLocations} />
         </div>

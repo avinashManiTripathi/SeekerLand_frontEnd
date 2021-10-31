@@ -29,7 +29,7 @@
 }
 
 .quick-links-inner-links::after {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 1px;
@@ -41,4 +41,48 @@
 .quick-links-inner-links:hover::after {
   width: 100%;
   transition: width 0.4s;
+}
+
+.insert {
+  background: #5e35b1;
+}
+
+img {
+  margin-right: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35px;
+  margin-top: 5px;
+}
+
+.insert span {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.insert p {
+  text-align: center;
+  font-size: 8px;
+}
+
+.home {
+  text-align: left;
+}
+
+.opaque {
+  color: #5e35b1;
+}
+
+.insert {
+  transition: all 1.3s;
+}
+
+.insert:hover {
+  transform: scale(1.1);
 }

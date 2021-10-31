@@ -31,7 +31,6 @@
 }
 
 .btn-signIn:hover {
- 
   color: white !important;
   border: 1px solid white !important;
 }
@@ -43,7 +42,7 @@
   border: unset;
 }
 .dropdown-menu {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   border-radius: 0px !important;
   border: 0px !important;
   color: #ffffff;

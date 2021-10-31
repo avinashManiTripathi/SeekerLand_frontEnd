@@ -1,5 +1,6 @@
 import React from 'react';
 import JobCards from '../../Component/JobCards';
+import Search from '../../Component/Search';
 import { jobsData } from '../../jobsJSON';
 import Filter from '../../Layout/SideBar/Filter';
 
@@ -15,12 +16,19 @@ import './jobs.css';
 const Jobs = (props) => {
   return (
     <div className='wrapper'>
-      <div className='container mt-5 '>
+      <div className='container'>
+        <div
+          style={{
+            marginTop: '100px',
+          }}>
+          <Search />
+        </div>
+
         <div className='row '>
-          <div className='col-md-3 mt-5'>
+          <div className='col-md-3 mt-4'>
             <Filter />
           </div>
-          <div className='col-md-6 mt-5'>
+          <div className='col-md-6 mt-4'>
             <div
               class='d-flex shadow bg-white '
               style={{
@@ -50,7 +58,7 @@ const Jobs = (props) => {
             </div>
             <JobCards data={jobsData} />
           </div>
-          <div className='col-md-3 mt-5'>
+          <div className='col-md-3 mt-4'>
             <SideBar data={JobsInTopLocations} />
             <SideBar data={JobsbyCategory} />
             <SideBar data={QuickLink} />
