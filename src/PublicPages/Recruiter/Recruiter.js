@@ -21,7 +21,7 @@ const Recruiter = (props) => {
             marginTop: '50px',
           }}>
           <div className='row'>
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img
@@ -44,7 +44,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>
-            <div className='col-md-4 col-6 '>
+            <div className='col-md-4  '>
               <div class='profile-card'>
                 <div class='profile-image text-center'>
                   <img
@@ -67,7 +67,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>{' '}
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img
@@ -90,7 +90,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>{' '}
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img
@@ -113,7 +113,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>{' '}
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img
@@ -136,7 +136,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>{' '}
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img
@@ -159,7 +159,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>{' '}
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img
@@ -182,7 +182,7 @@ const Recruiter = (props) => {
                 </div>
               </div>
             </div>{' '}
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 '>
               <div class='profile-card '>
                 <div class='profile-image text-center'>
                   <img

@@ -1,18 +1,18 @@
-import React from "react";
-import SideBar from "../../Layout/SideBar/SideBar";
-import { JobsbyCategory, JobsInTopLocations } from "../../SiideBarJSON";
-import "./jobs.css";
+import React from 'react';
+import SideBar from '../../Layout/SideBar/SideBar';
+import { JobsbyCategory, JobsInTopLocations } from '../../SiideBarJSON';
+import './jobs.css';
 
 const JobsDetails = (props) => {
   return (
-    <div className="container ">
-      <div className="row ">
-        <div className="col-md-9 mt-5">
-          <div className="bg-white shadow job-card-wrapper ">
-            <div className="job-card-inner">
+    <div className='container '>
+      <div className='row '>
+        <div className='col-md-9 mt-5'>
+          <div className='bg-white shadow job-card-wrapper '>
+            <div className='job-card-inner'>
               <h2>Urgent Hiring For Spring Developer</h2>
               <h3>Speckyfox Technologies Pvt Ltd</h3>
-              <div className="job-card-svl">
+              <div className='job-card-svl'>
                 <span> 120000</span>
                 <span> 25</span>
                 <span>Arjan Ghar AyaNagar New Delhi</span>
@@ -33,22 +33,22 @@ const JobsDetails = (props) => {
               </p>
 
               <hr />
-              <div className="row">
-                <div className="col-md-6">
-                  <p className=" d-flex justify-content-start">
+              <div className='row'>
+                <div className='col-md-6'>
+                  <p className=' d-flex justify-content-start'>
                     Post On 2 Days Ago
                   </p>
                 </div>
-                <div className="col-md-6 d-flex justify-content-end">
-                  <button className="btn btn-danger btn-apply d-flex justify-content-end">
+                <div className='col-md-6 d-flex justify-content-end'>
+                  <button className='btn btn-danger btn-apply d-flex justify-content-end'>
                     Apply Job
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-white shadow  job-card">
-            <div className="job-card-inner">
+          <div className='bg-white shadow  job-card'>
+            <div className='job-card-inner'>
               <h2>Description</h2>
               <p>
                 Dear Candidate, Hope you are doing well in this pandemic. We
@@ -73,8 +73,8 @@ const JobsDetails = (props) => {
               </p>
             </div>
           </div>
-          <div className="bg-white shadow  mt-3  job-card">
-            <div className="job-card-inner">
+          <div className='bg-white shadow  mt-3  job-card'>
+            <div className='job-card-inner'>
               <h2>About Company</h2>
               <p>
                 A pioneer in Indias IT staffing business, Future Focus Infotech
@@ -105,10 +105,220 @@ const JobsDetails = (props) => {
                 years. Website : http://www.focusinfotech.com Year founded :
                 1997
               </p>
+
+              <div
+                className='job-details-type'
+                style={{
+                  margin: '20px 0px',
+                }}>
+                <p>
+                  <span> Role : </span> Full Time
+                </p>
+                <p>
+                  <span> RoleFull : </span>Stack Developer
+                </p>
+                <p>
+                  <span> Industry Type : </span>IT Services & Consulting{' '}
+                </p>
+                <p>
+                  <span> Functional Area : </span>Engineering - Software{' '}
+                </p>
+                <p>
+                  <span> Employment Type :</span>
+                  Full Time, Permanent Role CategorySoftware Development
+                  Education{' '}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='bg-white shadow  mt-3  job-card'>
+            <div className='job-card-inner'>
+              <div className='row'>
+                <div className='col-md-3'>
+                  <img
+                    src='https://media-exp1.licdn.com/dms/image/C5103AQFed6_BRhOgyg/profile-displayphoto-shrink_200_200/0/1526668638838?e=1640217600&v=beta&t=s3ygnbkB7SK9hEoJtXR9Q8CcAnv8Idcomqy-6cfXrvw'
+                    alt=''
+                    class='img-circle img-responsive'
+                    style={{
+                      borderRadius: '50%',
+                    }}
+                  />
+                </div>
+                <div className='col-md-9'>
+                  <h2>Avinash Mani Tripathi</h2>
+                  <p>
+                    <strong>About: </strong> Web Designer / UI.{' '}
+                  </p>
+                  <p>
+                    <strong>Hobbies: </strong> Read, out with friends, listen to
+                    music, draw and learn new things.{' '}
+                  </p>
+                  <p>
+                    <strong className=''>Hiring </strong>
+                    <span>Hiring Java Developer and Laravel Developer</span>
+                  </p>
+                  <p>
+                    Ratings
+                    <a href='#'>
+                      <span class='fa fa-star'></span>
+                    </a>
+                    <a href='#'>
+                      <span class='fa fa-star'></span>
+                    </a>
+                    <a href='#'>
+                      <span class='fa fa-star'></span>
+                    </a>
+                    <a href='#'>
+                      <span class='fa fa-star'></span>
+                    </a>
+                    <a href='#'>
+                      <span class='fa fa-star-o'></span>
+                    </a>
+                  </p>
+
+                  <div className='d-flex mt-2'>
+                    <div class='col-xs-12 col-sm-4 '>
+                      <h2>
+                        <strong> 20,7K </strong>
+                      </h2>
+                      <p>
+                        <small>Followers</small>
+                      </p>
+                      <button class='btn btn-success btn-block'>
+                        <span class='fa fa-plus-circle'></span> Follow{' '}
+                      </button>
+                    </div>
+
+                    <div class='col-xs-12 col-sm-4 '>
+                      <h2>
+                        <strong> 20,7K </strong>
+                      </h2>
+                      <p>
+                        <small>Message</small>
+                      </p>
+                      <button class='btn btn-primary btn-block'>
+                        Message{' '}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* <div class='row'>
+                <div class='col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6'>
+                  <div class='well profile'>
+                    <div class='col-sm-12 d-flex'>
+                      <div class='col-xs-12 col-sm-4 text-center'>
+                        <figure>
+                          <img
+                            src='https://media-exp1.licdn.com/dms/image/C5103AQFed6_BRhOgyg/profile-displayphoto-shrink_200_200/0/1526668638838?e=1640217600&v=beta&t=s3ygnbkB7SK9hEoJtXR9Q8CcAnv8Idcomqy-6cfXrvw'
+                            alt=''
+                            class='img-circle img-responsive'
+                          />
+                          <figcaption class='ratings'>
+                            <p>
+                              Ratings
+                              <a href='#'>
+                                <span class='fa fa-star'></span>
+                              </a>
+                              <a href='#'>
+                                <span class='fa fa-star'></span>
+                              </a>
+                              <a href='#'>
+                                <span class='fa fa-star'></span>
+                              </a>
+                              <a href='#'>
+                                <span class='fa fa-star'></span>
+                              </a>
+                              <a href='#'>
+                                <span class='fa fa-star-o'></span>
+                              </a>
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    
+                    </div>
+                    <div class='col-xs-12  divider text-center'>
+                      <div class='col-xs-12 col-sm-4 '>
+                        <h2>
+                          <strong> 20,7K </strong>
+                        </h2>
+                        <p>
+                          <small>Followers</small>
+                        </p>
+                        <button class='btn btn-success btn-block'>
+                          <span class='fa fa-plus-circle'></span> Follow{' '}
+                        </button>
+                      </div>
+                      <div class='col-xs-12 d-flex col-sm-4 '>
+                        <h2>
+                          <strong>245</strong>
+                        </h2>
+                        <p>
+                          <small>Following</small>
+                        </p>
+                        <button class='btn btn-info btn-block'>
+                          <span class='fa fa-user'></span> View Profile{' '}
+                        </button>
+                      </div>
+                      <div class='col-xs-12 col-sm-4 '>
+                        <h2>
+                          <strong>43</strong>
+                        </h2>
+                        <p>
+                          <small>Snippets</small>
+                        </p>
+                        <div class='btn-group dropup btn-block'>
+                          <button type='button' class='btn btn-primary'>
+                            <span class='fa fa-gear'></span> Options{' '}
+                          </button>
+                          <button
+                            type='button'
+                            class='btn btn-primary dropdown-toggle'
+                            data-toggle='dropdown'>
+                            <span class='caret'></span>
+                            <span class='sr-only'>Toggle Dropdown</span>
+                          </button>
+                          <ul class='dropdown-menu text-left' role='menu'>
+                            <li>
+                              <a href='#'>
+                                <span class='fa fa-envelope pull-right'></span>{' '}
+                                Send an email{' '}
+                              </a>
+                            </li>
+                            <li>
+                              <a href='#'>
+                                <span class='fa fa-list pull-right'></span> Add
+                                or remove from a list{' '}
+                              </a>
+                            </li>
+                            <li class='divider'></li>
+                            <li>
+                              <a href='#'>
+                                <span class='fa fa-warning pull-right'></span>
+                                Report this user for spam
+                              </a>
+                            </li>
+                            <li class='divider'></li>
+                            <li>
+                              <a href='#' class='btn disabled' role='button'>
+                                {' '}
+                                Unfollow{' '}
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className="col-md-3 mt-5">
+        <div className='col-md-3 mt-5'>
           <SideBar data={JobsbyCategory} />
           <SideBar data={JobsInTopLocations} />
         </div>

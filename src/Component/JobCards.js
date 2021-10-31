@@ -1,12 +1,13 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useEffect, useState } from 'react';
-import { Spinner } from 'react-bootstrap';
+import { Col, Spinner, Toast, ToastContainer } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const JobCards = ({ data }) => {
   const [state, setState] = useState({
     jobId: null,
     clickAppyButton: false,
+    show: false,
   });
   const history = useHistory();
   const handleOnClickJobCard = () => {
@@ -18,6 +19,7 @@ const JobCards = ({ data }) => {
       setState({
         jobId: id,
         clickAppyButton: true,
+        show: true,
       }),
       10000
     );
@@ -118,6 +120,31 @@ const JobCards = ({ data }) => {
             </div>
           );
         })}
+
+      <div className='row'>
+        <Col xs={6}>
+          <ToastContainer position='bottom-end'>
+            <Toast
+              onClose={() => setState({ show: false })}
+              show={state.show}
+              delay={3000}
+              autohide>
+              <Toast.Header>
+                <img
+                  src='holder.js/20x20?text=%20'
+                  className='rounded me-2'
+                  alt=''
+                />
+                <strong className='me-auto'>Bootstrap</strong>
+                <small>11 mins ago</small>
+              </Toast.Header>
+              <Toast.Body>
+                Woohoo, you're reading this text in a Toast!
+              </Toast.Body>
+            </Toast>
+          </ToastContainer>
+        </Col>
+      </div>
     </div>
   );
 };
