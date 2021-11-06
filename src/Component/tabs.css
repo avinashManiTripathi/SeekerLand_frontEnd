@@ -1,0 +1,12 @@
+.tabs-data {
+  margin: 4px 0px;
+  font-size: 14px;
+}
+.nav {
+  width: '50px';
+}
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: unset;
+}

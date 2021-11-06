@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Spinner, Button, Form } from 'react-bootstrap';
+import CardSlider from '../../Component/CardSlider';
 import JobCards from '../../Component/JobCards';
+import TabsComponent from '../../Component/TabsComponent';
+import { FindJobVacanciesBy } from '../../FindJobVacanciesBy';
 import { jobsData } from '../../jobsJSON';
 
 import SideBar, {
@@ -8,6 +11,7 @@ import SideBar, {
   TopSideBarMenu,
 } from '../../Layout/SideBar/SideBar';
 import Slider from '../../Layout/Slider/Slider';
+import { PeopleAlsoConsider } from '../../PeopleAlsoConsider';
 import {
   JobsbyCategory,
   JobsInTopLocations,
@@ -103,9 +107,20 @@ const Home = (props) => {
         <div className='row'>
           <div className='col-md-9'>
             <div className='top-companies-card mb-5 bg-white white-shadow  '>
-              <h2>Top Hiring Companies</h2>
+              <h2 className='card-title'>Top Hiring Companies</h2>
               <Slider />
             </div>
+
+            <div className='top-companies-card mb-5 bg-white white-shadow  '>
+              <h2 className='card-title'>Recent Jobs</h2>
+              <CardSlider data={jobsData} />
+            </div>
+
+            <div className='top-companies-card mb-5 bg-white white-shadow  '>
+              <h2 className='card-title'>Recent Jobs</h2>
+              <TabsComponent data={FindJobVacanciesBy} />
+            </div>
+
             <JobCards data={jobsData} />
           </div>
           <div className='col-md-3'>

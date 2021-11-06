@@ -1,6 +1,7 @@
 import React from 'react';
 import JobCards from '../../Component/JobCards';
 import Search from '../../Component/Search';
+import TabsComponent from '../../Component/TabsComponent';
 import { jobsData } from '../../jobsJSON';
 import Filter from '../../Layout/SideBar/Filter';
 
@@ -8,6 +9,7 @@ import SideBar, {
   TopSideBarJobs,
   TopSideBarMenu,
 } from '../../Layout/SideBar/SideBar';
+import { PeopleAlsoConsider } from '../../PeopleAlsoConsider';
 
 import {
   JobsbyCategory,
@@ -61,6 +63,19 @@ const Jobs = (props) => {
               </div>
             </div>
             <JobCards data={jobsData} />
+
+            <div className='tabs-wrapper mt-4'>
+              <h4
+                style={{
+                  fontSize: '14px',
+                  fontWeight: 'bold',
+                }}>
+                Apply to 1414 Java Job Vacancies in Noida
+              </h4>
+              <div className='bg-white shadow p-2 mb-2 mt-2'>
+                <TabsComponent data={PeopleAlsoConsider} />
+              </div>
+            </div>
           </div>
           <div className='col-md-3 mt-4'>
             <SideBar data={JobsInTopLocations} />

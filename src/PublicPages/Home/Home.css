@@ -1,5 +1,5 @@
 .job-search-wrapper {
-  background-image: url("https://www.pngmagic.com/product_images/pure-blue-background-images-free-download.jpg");
+  background-image: url('https://www.pngmagic.com/product_images/pure-blue-background-images-free-download.jpg');
   /* background-image: url("https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
   background-size: cover;
   padding: 30px 0px 10px 0px !important;
@@ -7,6 +7,10 @@
 .job-search-inner-wrapper {
   margin: 50px 0px 10px 0px !important;
   color: white;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
 }
 .job-search-container {
   padding: 20px 10px;

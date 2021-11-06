@@ -1,0 +1,21 @@
+.card-slider {
+  padding: 20px !important;
+  margin: 20px 5px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  height: 160px;
+}
+.card-slider h2 {
+  font-style: Poppins-Regular !important;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+.card-slider h3 {
+  font-style: Poppins-Light;
+  color: #280068 !important;
+  font-weight: bold;
+  font-size: 12px;
+}
+.card-slider p {
+  font-size: 12px;
+}

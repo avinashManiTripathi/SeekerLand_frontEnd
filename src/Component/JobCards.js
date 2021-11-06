@@ -69,12 +69,25 @@ const JobCards = ({ data }) => {
 
                 <hr />
                 <div className='row'>
-                  <div className='col-md-6'>
+                  <div className='d-flex col-md-9'>
                     <p className=' d-flex justify-content-start'>
                       Post On 2 Days Ago
                     </p>
+                    <div style={{ margin: '0px 20px' }}>
+                      <p>
+                        Job Applicants :
+                        <span
+                          style={{
+                            margin: '0px 5px',
+                            fontSize: '12px',
+                            fontWeight: 'bold',
+                          }}>
+                          4889999
+                        </span>{' '}
+                      </p>
+                    </div>
                   </div>
-                  <div className='col-md-6 d-flex justify-content-end'>
+                  <div className='col-md-3 d-flex justify-content-end'>
                     <button className='job-card-footer-icon'>
                       <i class='fa fa-star-o' aria-hidden='true'></i>
                     </button>

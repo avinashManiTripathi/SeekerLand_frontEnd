@@ -19,15 +19,15 @@ export const TopSideBarJobs = (props) => {
                       fontSize: '13px',
                       background: 'blue',
                       borderRadius: '20px',
+                      fontWeight: 'bold',
                     }}>
                     hourly
                   </span>
                 </h4>
               </div>
               <div class='col-auto col-sm-auto'>
-                <div class='d-flex pt-2'>
-                  <i class='fa fa-clock-o' aria-hidden='true'></i>
-                  <h5 style={{ fontSize: '13px' }}>55/hr</h5>
+                <div class=' pt-2'>
+                  <h5 style={{ fontSize: '13px' }}>$ 55/hr</h5>
                 </div>
               </div>
             </div>
@@ -108,16 +108,15 @@ export const TopSideBarJobs = (props) => {
                       fontSize: '13px',
                       background: 'yellow',
                       borderRadius: '20px',
+                      fontWeight: 'bold',
                     }}>
                     Part Time
                   </span>
                 </h4>
               </div>
               <div class='col-auto col-sm-auto '>
-                <div class='d-flex  pt-2'>
-                  {' '}
-                  <i class='fa fa-clock-o' aria-hidden='true'></i>
-                  <h5 style={{ fontSize: '13px' }}>55/hr</h5>
+                <div class=' pt-2'>
+                  <h5 style={{ fontSize: '13px' }}>$ 55/hr</h5>
                 </div>
               </div>
             </div>

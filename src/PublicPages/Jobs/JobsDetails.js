@@ -1,6 +1,8 @@
 import React from 'react';
+import CardSlider from '../../Component/CardSlider';
 import SideBar, { TopSideBarJobs } from '../../Layout/SideBar/SideBar';
 import { JobsbyCategory, JobsInTopLocations } from '../../SiideBarJSON';
+import { jobsData } from '../../jobsJSON';
 import './jobs.css';
 
 const JobsDetails = (props) => {
@@ -206,6 +208,15 @@ const JobsDetails = (props) => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div
+            className='mb-5 mt-5  bg-white white-shadow  '
+            style={{
+              padding: '20px 10px',
+            }}>
+            <h2 className='card-title'>Recent Jobs</h2>
+            <CardSlider data={jobsData} />
           </div>
         </div>
         <div className='col-md-3 mt-5'>
