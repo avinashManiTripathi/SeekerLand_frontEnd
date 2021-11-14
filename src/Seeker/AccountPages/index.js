@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import FormModel from '../Models/FormModel';
 
 export const MyAccountUploadResmeCard = (props) => {
   const [fileName, setFileName] = useState(null);
@@ -326,6 +327,105 @@ export const MyAccountProjectsCard = (props) => {
           <p>2019 (Full time)</p>
         </div>
       </div>
+
+      <FormModel
+        title='Add Project'
+        show={showModel}
+        onHide={() => setShowModel(false)}>
+        <form>
+          <div className='form-group'>
+            <label for='exampleInputEmail1'>Project Title</label>
+            <input
+              type='text'
+              className='form-control'
+              placeholder='Enter Project Title'
+            />
+            <small id='emailHelp' className='form-text text-muted'>
+              Project Title shoould be maximum size 30 word
+            </small>
+          </div>
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>Client</label>
+            <input
+              type='password'
+              className='form-control'
+              id='exampleInputPassword1'
+              placeholder='Enter Client Name'
+            />
+          </div>
+
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>
+              {' '}
+              Tag this project with your Employment/Education
+            </label>
+            <select
+              className='form-select form-control'
+              aria-label='Default select example'>
+              <option selected>2020</option>
+              <option value='1'>One</option>
+              <option value='2'>Two</option>
+              <option value='3'>Three</option>
+            </select>
+          </div>
+
+          <div className='row'>
+            <div className='col-md-6'>
+              <div className='form-group'>
+                <label for='exampleInputPassword1'>Starting From</label>
+                <select
+                  className='form-select form-control'
+                  aria-label='Default select example'>
+                  <option selected>2020</option>
+                  <option value='1'>One</option>
+                  <option value='2'>Two</option>
+                  <option value='3'>Three</option>
+                </select>
+              </div>
+            </div>
+            <div className='col-md-6'>
+              <div className='form-group'>
+                <label for='exampleInputPassword1'>Starting From</label>
+                <select
+                  className='form-select form-control'
+                  aria-label='Default select example'>
+                  <option selected>2021</option>
+                  <option value='1'>One</option>
+                  <option value='2'>Two</option>
+                  <option value='3'>Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div className='d-flex '>
+            <div className='form-group m-2'>
+              <input type='radio' className='custom-control-input' />
+              <label
+                className='custom-control-label m-2'
+                for='customRadioInline1'>
+                In Progress
+              </label>
+            </div>
+            <div className='form-group m-2'>
+              <input type='radio' className='custom-control-input' />
+              <label
+                className='custom-control-label  m-2'
+                for='customRadioInline1'>
+                In Progress
+              </label>
+            </div>
+          </div>
+
+          <div className='form-group m-2'>
+            <label for='exampleInputPassword1'>Project Description</label>
+            <textarea
+              className='form-control'
+              placeholder='Enter Description '
+            />
+          </div>
+        </form>
+      </FormModel>
     </div>
   );
 };
