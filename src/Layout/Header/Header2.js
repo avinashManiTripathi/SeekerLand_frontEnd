@@ -21,46 +21,46 @@ const Header2 = () => {
       bg='white'
       variant='white shadow fixed-top '>
       <div className='container'>
-        <Link to='/' class='navbar-brand'>
-          <i class='fa fa-cube'></i>Agwate<b>SeekerLand</b>
+        <Link to='/' className='navbar-brand'>
+          <i className='fa fa-cube'></i>Agwate<b>SeekerLand</b>
         </Link>
         <button
           type='button'
-          class='navbar-toggler'
+          className='navbar-toggler'
           data-toggle='collapse'
           data-target='#navbarCollapse'>
-          <span class='navbar-toggler-icon'></span>
+          <span className='navbar-toggler-icon'></span>
         </button>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto header-nav-link'>
-            <Link to='/' class='nav-item nav-link active'>
-              <i class='fa fa-home'></i>
+            <Link to='/' className='nav-item nav-link active'>
+              <i className='fa fa-home'></i>
               <span>Home</span>
             </Link>
 
-            <Link to='/jobs' class='nav-item nav-link'>
-              <i class='fa fa-briefcase'></i>
+            <Link to='/jobs' className='nav-item nav-link'>
+              <i className='fa fa-briefcase'></i>
               <span>Jobs</span>
             </Link>
-            <Link to='/recruiters' class='nav-item nav-link'>
-              <i class='fa fa-users'></i>
+            <Link to='/recruiters' className='nav-item nav-link'>
+              <i className='fa fa-users'></i>
               <span>Recruiters</span>
             </Link>
-            <Link to='/' class='nav-item nav-link'>
-              <i class='fa fa-pie-chart'></i>
+            <Link to='/' className='nav-item nav-link'>
+              <i className='fa fa-pie-chart'></i>
               <span>Reports</span>
             </Link>
-            <Link to='/' class='nav-item nav-link'>
-              <i class='fa fa-gears'></i>
+            <Link to='/' className='nav-item nav-link'>
+              <i className='fa fa-gears'></i>
               <span>Careers Tips</span>
             </Link>
-            <Link to='/' class='nav-item nav-link'>
-              <i class='fa fa-envelope'></i>
+            <Link to='/' className='nav-item nav-link'>
+              <i className='fa fa-envelope'></i>
               <span>Messages</span>
             </Link>
-            <Link to='/' class='nav-item nav-link'>
-              <i class='fa fa-bell'></i>
+            <Link to='/' className='nav-item nav-link'>
+              <i className='fa fa-bell'></i>
               <span>Notifications</span>
             </Link>
           </Nav>
@@ -77,7 +77,7 @@ const Header2 = () => {
                     className='user-action-dropdown'>
                     <img
                       src='https://www.tutorialrepublic.com/examples/images/avatar/3.jpg'
-                      class='avatar'
+                      className='avatar'
                       alt='Avatar'
                     />
                     Avinash Tripathi

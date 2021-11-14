@@ -11,7 +11,10 @@ export default function TabsComponent({ data }) {
         {data &&
           data.map((data) => {
             return (
-              <Tab eventKey={data.id} title={data.title}>
+              <Tab
+                className='tab--header-links'
+                eventKey={data.id}
+                title={data.title}>
                 <div className='row'>
                   {data.locations.map((localtion) => {
                     return (

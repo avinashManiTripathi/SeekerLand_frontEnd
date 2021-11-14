@@ -9,7 +9,7 @@ export const jobsData = [
     minExp: '3',
     maxExp: '10',
     description:
-      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting Team, the person will be responsible for leading the discussions with client from a  Business perspective. *',
+      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting  ....',
     skills: [
       {
         id: '1',
@@ -55,7 +55,7 @@ export const jobsData = [
     minExp: '4',
     maxExp: '10',
     description:
-      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting Team, the person will be responsible for leading the discussions with client from a  Business perspective. *',
+      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting  ....',
 
     skills: [
       {
@@ -102,7 +102,7 @@ export const jobsData = [
     minExp: '4',
     maxExp: '10',
     description:
-      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting Team, the person will be responsible for leading the discussions with client from a  Business perspective. *',
+      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting  .... ',
 
     skills: [
       {
@@ -149,7 +149,7 @@ export const jobsData = [
     minExp: '3',
     maxExp: '10',
     description:
-      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting Team, the person will be responsible for leading the discussions with client from a  Business perspective. *',
+      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting  ....',
 
     skills: [
       {
@@ -196,7 +196,7 @@ export const jobsData = [
     minExp: '4',
     maxExp: '10',
     description:
-      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting Team, the person will be responsible for leading the discussions with client from a  Business perspective. *',
+      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting  ....',
 
     skills: [
       {
@@ -243,7 +243,7 @@ export const jobsData = [
     minExp: '4',
     maxExp: '10',
     description:
-      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting Team, the person will be responsible for leading the discussions with client from a  Business perspective. *',
+      ' In these roles you will be responsible for: * * As an integral part of the NTT Data Consulting  ....',
 
     skills: [
       {

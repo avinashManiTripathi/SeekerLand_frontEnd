@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Layout/Header/Header';
+// import Header from './Layout/Header/Header';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './PublicPages/Home/Home';
 import Footer from './Layout/Footer/Footer';

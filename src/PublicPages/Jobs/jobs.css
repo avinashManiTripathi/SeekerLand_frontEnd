@@ -5,6 +5,7 @@
 }
 .job-card-wrapper {
   margin: 0px 0px 10px 0px !important;
+  background-color: #ffffff;
   cursor: pointer;
 }
 .job-card-inner h2 {

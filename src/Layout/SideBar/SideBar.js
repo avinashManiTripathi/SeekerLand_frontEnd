@@ -4,7 +4,7 @@ import './SideBar.css';
 
 export const TopSideBarJobs = (props) => {
   return (
-    <div class='justify-content-center img-fluid'>
+    <div class='justify-content-center'>
       <div class='col-md-12 shadow bg-white  d-flex align-items-stretch mb-3'>
         <div class=' card  border-0 py-2'>
           <div class='card-header bg-white border-0 mb-0'>
@@ -32,7 +32,7 @@ export const TopSideBarJobs = (props) => {
               </div>
             </div>
           </div>
-          <div class=' card-body text-center img-fluid pb-0 mt-0 pt-3'>
+          <div class=' card-body text-center pb-0 mt-0 pt-3'>
             <div>
               <h5
                 class='card-title mb-0 font-weight-bold'
@@ -89,7 +89,7 @@ export const TopSideBarJobs = (props) => {
           <div>
             <hr class='hl'></hr>
           </div>
-          <div class='card-footer border-0 text-center img-fluid mx-auto '>
+          <div class='card-footer border-0 text-center mx-auto '>
             <button className='btn btn-danger'>View Job</button>
           </div>
         </div>
@@ -121,7 +121,7 @@ export const TopSideBarJobs = (props) => {
               </div>
             </div>
           </div>
-          <div class=' card-body text-center img-fluid pb-0 mt-0 pt-3'>
+          <div class=' card-body text-center pb-0 mt-0 pt-3'>
             <div class='d-block'>
               <h5
                 class='card-title mb-0 font-weight-bold'
@@ -174,7 +174,7 @@ export const TopSideBarJobs = (props) => {
           <div>
             <hr class='hl'></hr>
           </div>
-          <div class='card-footer border-0 text-center img-fluid mx-auto '>
+          <div class='card-footer border-0 text-center mx-auto '>
             <button className='btn btn-danger'>View Job</button>
           </div>
         </div>
@@ -185,7 +185,7 @@ export const TopSideBarJobs = (props) => {
 
 export const TopSideBarMenu = (props) => {
   return (
-    <div class=' d-flex justify-content-center img-fluid mb-2  '>
+    <div class=' d-flex justify-content-center mb-2  '>
       <div
         class='card'
         style={{
@@ -197,24 +197,26 @@ export const TopSideBarMenu = (props) => {
         <h5 class='pb-2 border-bottom'>Top Agwate Service</h5>
 
         <div class='row'>
-          <div class='col-md-6 d-flex justify-content-center img-fluid'>
+          <div class='col-md-6 d-flex justify-content-center'>
             <div class='card insert ml-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/dotty/128/000000/2012.png'
-                class='center img-fluid'
+                class='center'
+                alt='seekerland'
               />{' '}
               <span>Calender</span>
               <p>March,Wednesday</p>
               <p>3 Events</p>
             </div>
           </div>
-          <div class='col-md-6 d-flex justify-content-center img-fluid'>
+          <div class='col-md-6 d-flex justify-content-center'>
             <div class='card insert mr-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/color/128/000000/grocery-bag.png'
-                class='center img-fluid'
+                class='center'
+                alt='seekerland'
               />{' '}
               <span>USA JOBS</span>
               <p>Java,Php</p>
@@ -223,24 +225,26 @@ export const TopSideBarMenu = (props) => {
           </div>
         </div>
         <div class='row'>
-          <div class='col-md-6 d-flex justify-content-center img-fluid'>
+          <div class='col-md-6 d-flex justify-content-center'>
             <div class='card insert ml-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/bubbles/128/000000/user-location.png'
-                class='center img-fluid'
+                class='center'
+                alt='seekerland'
               />{' '}
               <span>Location</span>
               <p>Lucy mao going to office</p>
               <p class='opaque'>o</p>
             </div>
           </div>
-          <div class='col-md-6 d-flex justify-content-center img-fluid'>
+          <div class='col-md-6 d-flex justify-content-center'>
             <div class='card insert mr-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/fluent/128/000000/alarm.png'
-                class='center img-fluid'
+                class='center'
+                alt='seekerland'
               />{' '}
               <span>Activity</span>
               <p>Rose favourited your post</p>
@@ -249,24 +253,26 @@ export const TopSideBarMenu = (props) => {
           </div>
         </div>
         <div class='row'>
-          <div class='col-md-6 d-flex justify-content-center img-fluid'>
+          <div class='col-md-6 d-flex justify-content-center'>
             <div class='card insert ml-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/dusk/128/000000/checklist.png'
-                class='center img-fluid'
+                class='center'
+                alt='seekerland'
               />{' '}
               <span>To do</span>
               <p>Homework,Design</p>
               <p>4 Items</p>
             </div>
           </div>
-          <div class='col-md-6 d-flex justify-content-center img-fluid'>
+          <div class='col-md-6 d-flex justify-content-center'>
             <div class='card insert mr-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/fluent/128/000000/settings.png'
-                class='center img-fluid'
+                class='center'
+                alt='seekerland'
               />{' '}
               <span>Settings</span>
               <p>Homework,Design</p>

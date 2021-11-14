@@ -34,23 +34,22 @@ const Jobs = (props) => {
             <Filter />
             <TopSideBarMenu />
           </div>
-          <div className='col-md-6 mt-4'>
+          <div className='col-md-7 mt-4'>
             <div
-              class='d-flex shadow bg-white '
+              className='d-flex shadow bg-white '
               style={{
-                margin: '0px 0px 20px 0px ',
-                padding: '10px ',
+                margin: '0px 0px 10px 0px ',
+                padding: '5px ',
               }}>
               <div className='col-md-6'>
-                <div class='text-muted m-2' id='res'>
+                <div className='text-muted m-2' id='res'>
                   1444 Java Jobs in Noida
                 </div>
               </div>
               <div className='col-md-6'>
-                <div class='d-flex justify-content-end '>
-                  <div id='sorting' class='d-flex'>
-                    {' '}
-                    <span class='text-muted m-2'>SortBy</span>
+                <div className='d-flex justify-content-end '>
+                  <div id='sorting' className='d-flex'>
+                    <span className='text-muted m-2'>SortBy</span>
                     <select
                       name='sort'
                       id='sort'
@@ -77,7 +76,7 @@ const Jobs = (props) => {
               </div>
             </div>
           </div>
-          <div className='col-md-3 mt-4'>
+          <div className='col-md-2 mt-4'>
             <SideBar data={JobsInTopLocations} />
             <SideBar data={JobsbyCategory} />
             <SideBar data={QuickLink} />

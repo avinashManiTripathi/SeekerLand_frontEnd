@@ -1,5 +1,4 @@
-import Button from '@restart/ui/esm/Button';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Col, Spinner, Toast, ToastContainer } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
@@ -30,7 +29,7 @@ const JobCards = ({ data }) => {
       {data &&
         data.map((data) => {
           return (
-            <div className='bg-white shadow job-card-wrapper '>
+            <div className='job-card-wrapper '>
               <div className='job-card-inner'>
                 <div onClick={() => handleOnClickJobCard(data.id)}>
                   <h2>{data.title}</h2>
@@ -59,18 +58,15 @@ const JobCards = ({ data }) => {
                         return <span> {skills.name} </span>;
                       })}
                   </p>
-                  <p>
-                    In these roles you will be responsible for: * * As an
-                    integral part of the NTT Data Consulting Team, the person
-                    will be responsible for leading the discussions with client
-                    from a Business perspective. *
-                  </p>
+                  <p>{data.description}</p>
                 </div>
 
                 <hr />
                 <div className='row'>
                   <div className='d-flex col-md-9'>
-                    <p className=' d-flex justify-content-start'>
+                    <p
+                      className=' d-flex justify-content-start'
+                      style={{ padding: '0px opx' }}>
                       Post On 2 Days Ago
                     </p>
                     <div style={{ margin: '0px 20px' }}>
@@ -89,10 +85,10 @@ const JobCards = ({ data }) => {
                   </div>
                   <div className='col-md-3 d-flex justify-content-end'>
                     <button className='job-card-footer-icon'>
-                      <i class='fa fa-star-o' aria-hidden='true'></i>
+                      <i className='fa fa-star-o' aria-hidden='true'></i>
                     </button>
                     <button className='job-card-footer-icon'>
-                      <i class='fa fa-share-alt' aria-hidden='true'></i>
+                      <i className='fa fa-share-alt' aria-hidden='true'></i>
                     </button>
 
                     <button

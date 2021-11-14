@@ -7,7 +7,7 @@ import './jobs.css';
 
 const JobsDetails = (props) => {
   return (
-    <div className='container '>
+    <div className='container'>
       <div className='row '>
         <div className='col-md-9 mt-5'>
           <div className='bg-white shadow job-card-wrapper '>
@@ -141,7 +141,7 @@ const JobsDetails = (props) => {
                   <img
                     src='https://png.pngtree.com/png-clipart/20190924/original/pngtree-business-people-avatar-icon-user-profile-free-vector-png-image_4815126.jpg'
                     alt=''
-                    class='img-circle img-responsive'
+                    className='img-circle img-responsive'
                     style={{
                       width: '200px',
                       borderRadius: '50%',
@@ -164,43 +164,43 @@ const JobsDetails = (props) => {
                   <p>
                     Ratings
                     <a href='#'>
-                      <span class='fa fa-star'></span>
+                      <span className='fa fa-star'></span>
                     </a>
                     <a href='#'>
-                      <span class='fa fa-star'></span>
+                      <span className='fa fa-star'></span>
                     </a>
                     <a href='#'>
-                      <span class='fa fa-star'></span>
+                      <span className='fa fa-star'></span>
                     </a>
                     <a href='#'>
-                      <span class='fa fa-star'></span>
+                      <span className='fa fa-star'></span>
                     </a>
                     <a href='#'>
-                      <span class='fa fa-star-o'></span>
+                      <span className='fa fa-star-o'></span>
                     </a>
                   </p>
 
                   <div className='d-flex mt-2'>
-                    <div class='col-xs-12 col-sm-4 '>
+                    <div className='col-xs-12 col-sm-4 '>
                       <h2>
                         <strong> 20,7K </strong>
                       </h2>
                       <p>
                         <small>Followers</small>
                       </p>
-                      <button class='btn btn-success btn-block'>
-                        <span class='fa fa-plus-circle'></span> Follow{' '}
+                      <button className='btn btn-success btn-block'>
+                        <span className='fa fa-plus-circle'></span> Follow{' '}
                       </button>
                     </div>
 
-                    <div class='col-xs-12 col-sm-4 '>
+                    <div className='col-xs-12 col-sm-4 '>
                       <h2>
                         <strong> 20,7K </strong>
                       </h2>
                       <p>
                         <small>Message</small>
                       </p>
-                      <button class='btn btn-primary btn-block'>
+                      <button className='btn btn-primary btn-block'>
                         Message{' '}
                       </button>
                     </div>

@@ -7,11 +7,11 @@ import { FindJobVacanciesBy } from '../../FindJobVacanciesBy';
 import { jobsData } from '../../jobsJSON';
 
 import SideBar, {
-  TopSideBarJobs,
+  // TopSideBarJobs,
   TopSideBarMenu,
 } from '../../Layout/SideBar/SideBar';
 import Slider from '../../Layout/Slider/Slider';
-import { PeopleAlsoConsider } from '../../PeopleAlsoConsider';
+// import { PeopleAlsoConsider } from '../../PeopleAlsoConsider';
 import {
   JobsbyCategory,
   JobsInTopLocations,
