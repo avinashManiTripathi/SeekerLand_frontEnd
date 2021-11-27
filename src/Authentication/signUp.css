@@ -208,6 +208,9 @@
 }
 
 .fit-image {
-  width: 100%;
-  object-fit: cover;
+  width: 100% !important;
+  padding: 10px;
+  height: 100% !important;
+  border: 1px solid blue;
+  border-radius: 50%;
 }

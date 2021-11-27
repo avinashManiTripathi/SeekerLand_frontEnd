@@ -12,7 +12,7 @@ const Search = (props) => {
   };
 
   return (
-    <div className='job-search-container shadow bg-white'>
+    <div className='job-search-container bg-white'>
       <div className='row'>
         <div className='col-md-4'>
           <input

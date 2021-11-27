@@ -39,7 +39,7 @@ const Home = (props) => {
             </h2>
             <p>Find Jobs, Employment & Career Opportunities</p>
 
-            <div className='job-search-container shadow bg-white'>
+            <div className='job-search-container bg-white'>
               <div className='row'>
                 <div className='col-md-4'>
                   <input

@@ -287,7 +287,7 @@ export const TopSideBarMenu = (props) => {
 
 const SideBar = ({ data }) => {
   return (
-    <div className='quick-links-wrapper bg-white shadow p-2'>
+    <div className='quick-links-wrapper bg-white p-2'>
       <h2>{data.title}</h2>
       <div className='quick-links-inner'>
         {data &&

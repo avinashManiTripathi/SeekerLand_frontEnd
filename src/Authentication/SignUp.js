@@ -1,9 +1,33 @@
 import React, { useState } from 'react';
 import { ProgressBar } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import { RegistrationAction } from '../Actions/Registration.action';
 import './signUp.css';
 const SignUp = () => {
+  const Registration = useSelector((state) => state.registrationReducer);
+  const dispatch = useDispatch();
   const [step, setStep] = useState(1);
   const [progress, setProgress] = useState(25);
+  const [seeker, setSeeker] = useState({
+    firstName: '',
+    lastName: '',
+    gender: '',
+    mobileNumber: '',
+    email: '',
+    password: '',
+  });
+
+  const onInputChange = (e) => {
+    setSeeker({ ...seeker, [e.target.name]: e.target.value });
+  };
+  const { firstName, lastName, gender, mobileNumber, email } = seeker;
+
+  const OnSubmitRegistration = (e) => {
+    e.preventDefault();
+    dispatch(RegistrationAction(seeker));
+    HandleSteps(4);
+  };
+
   const HandleSteps = (steps) => {
     setProgress(25 * steps);
     setStep(steps);
@@ -17,7 +41,7 @@ const SignUp = () => {
             <p className='sub-heading'>
               Fill all form field to go to next step
             </p>
-            <form id='msform'>
+            <form id='msform' onSubmit={OnSubmitRegistration}>
               <ul id='progressbar'>
                 <li
                   className={
@@ -51,7 +75,7 @@ const SignUp = () => {
               </div>
               <br />
               {step === 1 && (
-                <fieldset>
+                <div>
                   <div className='form-card'>
                     <div className='row'>
                       <div className='col-7'>
@@ -62,16 +86,27 @@ const SignUp = () => {
                       </div>
                     </div>{' '}
                     <label className='fieldlabels'>Email: *</label>{' '}
-                    <input type='email' name='email' placeholder='Email Id' />{' '}
+                    <input
+                      type='email'
+                      name='email'
+                      onChange={(e) => onInputChange(e)}
+                      placeholder='Email Id'
+                    />{' '}
                     <label className='fieldlabels'>Password: *</label>{' '}
-                    <input type='password' name='pwd' placeholder='Password' />{' '}
+                    <input
+                      type='password'
+                      name='password'
+                      onChange={(e) => onInputChange(e)}
+                      placeholder='Password'
+                    />{' '}
                     <label className='fieldlabels'>Confirm Password: *</label>{' '}
                     <input
                       type='password'
-                      name='cpwd'
+                      name='confirm-password'
                       placeholder='Confirm Password'
+                      onChange={(e) => onInputChange(e)}
                     />
-                  </div>{' '}
+                  </div>
                   <input
                     type='button'
                     name='next'
@@ -79,10 +114,10 @@ const SignUp = () => {
                     value='Next'
                     onClick={() => HandleSteps(2)}
                   />
-                </fieldset>
+                </div>
               )}
               {step === 2 && (
-                <fieldset>
+                <div>
                   <div className='form-card'>
                     <div className='row'>
                       <div className='col-7'>
@@ -93,12 +128,27 @@ const SignUp = () => {
                       </div>
                     </div>{' '}
                     <label className='fieldlabels'>First Name: *</label>{' '}
-                    <input type='text' name='fname' placeholder='First Name' />{' '}
+                    <input
+                      type='text'
+                      name='firstName'
+                      onChange={(e) => onInputChange(e)}
+                      placeholder='First Name'
+                    />{' '}
                     <label className='fieldlabels'>Last Name: *</label>{' '}
-                    <input type='text' name='lname' placeholder='Last Name' />{' '}
+                    <input
+                      type='text'
+                      name='lastName'
+                      onChange={(e) => onInputChange(e)}
+                      placeholder='Last Name'
+                    />{' '}
                     <label className='fieldlabels'>Contact No.: *</label>{' '}
-                    <input type='text' name='phno' placeholder='Contact No.' />{' '}
-                  </div>{' '}
+                    <input
+                      type='text'
+                      name='mobileNumber'
+                      onChange={(e) => onInputChange(e)}
+                      placeholder='Contact No.'
+                    />{' '}
+                  </div>
                   <input
                     type='button'
                     name='next'
@@ -113,10 +163,10 @@ const SignUp = () => {
                     value='Previous'
                     onClick={() => HandleSteps(1)}
                   />
-                </fieldset>
+                </div>
               )}
               {step === 3 && (
-                <fieldset>
+                <div>
                   <div className='form-card'>
                     <div className='row'>
                       <div className='col-7'>
@@ -134,11 +184,9 @@ const SignUp = () => {
                     <input className='form-control' accept='image/*' />
                   </div>{' '}
                   <input
-                    type='button'
-                    name='next'
+                    type='submit'
                     className='next action-button'
                     value='Submit'
-                    onClick={() => HandleSteps(4)}
                   />{' '}
                   <input
                     type='button'
@@ -147,10 +195,10 @@ const SignUp = () => {
                     value='Previous'
                     onClick={() => HandleSteps(2)}
                   />
-                </fieldset>
+                </div>
               )}
               {step === 4 && (
-                <fieldset>
+                <div>
                   <div className='form-card'>
                     <div className='row'>
                       <div className='col-7'>
@@ -163,7 +211,10 @@ const SignUp = () => {
                     <br />
                     <br />
                     <h2 className='purple-text text-center'>
-                      <strong>SUCCESS !</strong>
+                      <strong>
+                        Thank You {firstName}
+                        {lastName}
+                      </strong>
                     </h2>{' '}
                     <br />
                     <div className='row justify-content-center'>
@@ -186,7 +237,7 @@ const SignUp = () => {
                       </div>
                     </div>
                   </div>
-                </fieldset>
+                </div>
               )}
             </form>
           </div>

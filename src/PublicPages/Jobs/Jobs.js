@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import JobCards from '../../Component/JobCards';
 import Search from '../../Component/Search';
+import { Spinner, Button, Form } from 'react-bootstrap';
 import TabsComponent from '../../Component/TabsComponent';
 import { jobsData } from '../../jobsJSON';
 import Filter from '../../Layout/SideBar/Filter';
@@ -19,16 +20,58 @@ import {
 import './jobs.css';
 
 const Jobs = (props) => {
+  const [state, setState] = useState({
+    buttonLoader: false,
+  });
+
+  const handleSearch = () => {
+    setState({
+      buttonLoader: true,
+    });
+  };
+
   return (
     <div className='wrapper'>
-      <div className='container'>
+      <div>
         <div
+          className='bg-white'
           style={{
-            marginTop: '100px',
+            padding: '10px 30px 5px 30px ',
+            borderBottom: '1px solid #c5c5c5',
+            borderTop: '1px solid #c5c5c5',
           }}>
-          <Search />
+          <div className='row'>
+            <div className='col-md-6 d-flex'>
+              <input
+                type='text'
+                placeholder='Keyword e.g(Job Title , Description , Tags)'
+                className='form-control'></input>
+              <Button
+                className=' br-0 form-btn btn btn-danger'
+                style={{ width: '20%' }}
+                onClick={handleSearch}>
+                {state.buttonLoader ? (
+                  <>
+                    Search{' '}
+                    <Spinner
+                      as='span'
+                      animation='border'
+                      size='sm'
+                      role='status'
+                      aria-hidden='true'
+                    />
+                  </>
+                ) : (
+                  <>
+                    Search <i className='fa fa-search' />
+                  </>
+                )}
+              </Button>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <div className='container'>
         <div className='row '>
           <div className='col-md-3 mt-4'>
             <Filter />
@@ -36,7 +79,7 @@ const Jobs = (props) => {
           </div>
           <div className='col-md-7 mt-4'>
             <div
-              className='d-flex shadow bg-white '
+              className='d-flex bg-white '
               style={{
                 margin: '0px 0px 10px 0px ',
                 padding: '5px ',

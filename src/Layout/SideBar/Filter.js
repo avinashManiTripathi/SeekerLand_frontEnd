@@ -13,13 +13,10 @@ const Filter = (props) => {
     <div>
       {!isMobile ? (
         <section
-          className='sidebar bg-white shadow mb-2'
+          className='sidebar bg-white mb-2'
           style={{
             padding: '20px 30px',
-            // position: 'fixed',
-            // margin: '0px',
-            // width: '21%',
-            // zIndex: 100,
+
           }}>
           <div className='border-bottom '>
             <h4 id='burgundy'>Filters</h4>
@@ -203,7 +200,7 @@ const Filter = (props) => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <section
-                className='sidebar bg-white shadow mb-2'
+                className='sidebar bg-white  mb-2'
                 style={{
                   padding: '20px 30px',
                 }}>

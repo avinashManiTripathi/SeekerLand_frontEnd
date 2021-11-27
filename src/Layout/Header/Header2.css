@@ -1,6 +1,7 @@
 .navbar {
   color: #fff;
-  background: #64017f !important;
+  /* background: #f5e8f8 !important; */
+  background: #ffffff !important;
   padding: 5px 16px;
   border-radius: 0;
   border: none;
@@ -17,20 +18,27 @@
   height: 36px;
   margin-right: 10px;
 }
+.postjob-button {
+  margin-top: 3.5px !important;
+  padding: 11px !important;
+  font-size: 11px !important;
+  color: #ffffff !important;
+  background: #5a2069 !important;
+  text-decoration: none;
+}
 .navbar .navbar-brand {
-  color: #efe5ff;
+  color: #140035;
   padding-left: 0;
   padding-right: 50px;
   font-size: 20px;
 }
 .navbar .nav-link {
   padding: 10px !important;
-  margin: 5px !important;
-  color: #fff !important;
+  color: rgb(19, 18, 18) !important;
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: #fff;
+  color: rgb(36, 34, 34);
 }
 .navbar .navbar-brand i {
   font-size: 25px;

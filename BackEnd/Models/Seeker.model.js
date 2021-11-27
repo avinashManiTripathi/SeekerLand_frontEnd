@@ -12,6 +12,10 @@ const SeekerSchema = mongoose.Schema({
     trim: true,
     lowercase: true,
   },
+  password: {
+    type: String,
+    required: true,
+  },
   gender: {
     type: String,
     required: true,

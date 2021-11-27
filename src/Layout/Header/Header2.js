@@ -15,12 +15,8 @@ const Header2 = () => {
   };
 
   return (
-    <Navbar
-      collapseOnSelect
-      expand='lg'
-      bg='white'
-      variant='white shadow fixed-top '>
-      <div className='container'>
+    <Navbar collapseOnSelect expand='lg' bg='white' variant='white  fixed-top '>
+      <div className='container-fluid'>
         <Link to='/' className='navbar-brand'>
           <i className='fa fa-cube'></i>Agwate<b>SeekerLand</b>
         </Link>
@@ -97,16 +93,21 @@ const Header2 = () => {
             ) : (
               <>
                 <Link
-                  className='nav-link'
+                  className='postjob-button'
                   to='/signin'
-                  style={{ fontWeight: 'bold' }}>
-                  SignIn
+                  style={{ marginRight: '20px' }}>
+                  Employers/Post Job
                 </Link>
                 <Link
                   className='nav-link'
-                  to='/signin'
-                  style={{ border: '1px solid #ffffff' }}>
-                  Employers/Post Job
+                  to='/signUp'
+                  style={{
+                    borderRight: '1px solid #D6D3D7',
+                  }}>
+                  Sign Up
+                </Link>
+                <Link className='nav-link' to='/signin'>
+                  Login In
                 </Link>
               </>
             )}
