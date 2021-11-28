@@ -68,44 +68,34 @@ const Jobs = (props) => {
                 )}
               </Button>
             </div>
+            <div className='col-md-6'>
+              <div className='d-flex justify-content-end '>
+                <div id='sorting' className='d-flex'>
+                  <span className='m-2' style={{ fontSize: '13px' }}>
+                    SortBy
+                  </span>
+                  <select
+                    style={{ fontSize: '13px' }}
+                    name='sort'
+                    id='sort'
+                    className='form-control form-select'>
+                    <option value='popularity'>Relevance</option>
+                    <option value='prcie'>Freshness</option>
+                  </select>{' '}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className='container'>
         <div className='row '>
-          <div className='col-md-3 mt-4'>
+          <div className='col-md-3 mt-2'>
             <Filter />
             <TopSideBarMenu />
           </div>
-          <div className='col-md-7 mt-4'>
-            <div
-              className='d-flex bg-white '
-              style={{
-                margin: '0px 0px 10px 0px ',
-                padding: '5px ',
-              }}>
-              <div className='col-md-6'>
-                <div className='text-muted m-2' id='res'>
-                  1444 Java Jobs in Noida
-                </div>
-              </div>
-              <div className='col-md-6'>
-                <div className='d-flex justify-content-end '>
-                  <div id='sorting' className='d-flex'>
-                    <span className='text-muted m-2'>SortBy</span>
-                    <select
-                      name='sort'
-                      id='sort'
-                      className='form-control form-select'>
-                      <option value='popularity'>Relevance</option>
-                      <option value='prcie'>Freshness</option>
-                    </select>{' '}
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className='col-md-7 mt-2'>
             <JobCards data={jobsData} />
-
             <div className='tabs-wrapper mt-4'>
               <h4
                 style={{
@@ -119,7 +109,7 @@ const Jobs = (props) => {
               </div>
             </div>
           </div>
-          <div className='col-md-2 mt-4'>
+          <div className='col-md-2 mt-2'>
             <SideBar data={JobsInTopLocations} />
             <SideBar data={JobsbyCategory} />
             <SideBar data={QuickLink} />

@@ -17,19 +17,14 @@
 .quick-links-wrapper .quick-links-inner {
   margin: 1px 10px;
 }
-/* .quick-links-wrapper .quick-links-inner .quick-links-inner-links {
-  margin: -20px 10px -10px 0px !important;
-  font-size: 14px !important;
-  text-decoration: none;
-  color: rgb(63, 63, 63);
-} */
+
 .quick-links-wrapper .quick-links-inner .quick-links-inner-links {
-  margin: -20px 10px -10px 0px !important;
   text-decoration: none;
-  font-size: 12px !important;
+  font-size: 14px !important;
   color: rgb(63, 63, 63);
 }
 
+/* 
 .quick-links-inner-links::after {
   content: '';
   display: block;
@@ -43,7 +38,7 @@
 .quick-links-inner-links:hover::after {
   width: 100%;
   transition: width 0.4s;
-}
+} */
 
 .insert {
   background: #5e35b1;

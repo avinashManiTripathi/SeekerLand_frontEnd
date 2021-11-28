@@ -16,7 +16,6 @@ const Filter = (props) => {
           className='sidebar bg-white mb-2'
           style={{
             padding: '20px 30px',
-
           }}>
           <div className='border-bottom '>
             <h4 id='burgundy'>Filters</h4>

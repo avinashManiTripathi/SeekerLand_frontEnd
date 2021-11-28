@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header2.css';
+import agwate from './agwate.png';
 
 import { Dropdown, Nav, Navbar } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
@@ -18,7 +19,9 @@ const Header2 = () => {
     <Navbar collapseOnSelect expand='lg' bg='white' variant='white  fixed-top '>
       <div className='container-fluid'>
         <Link to='/' className='navbar-brand'>
-          <i className='fa fa-cube'></i>Agwate<b>SeekerLand</b>
+          <i className='fa fa-cube'></i>
+          {/* <img src={agwate} className=''></img> */}
+          <b> Agwate</b>
         </Link>
         <button
           type='button'
@@ -71,12 +74,7 @@ const Header2 = () => {
                   <Dropdown.Toggle
                     id='dropdown-basic'
                     className='user-action-dropdown'>
-                    <img
-                      src='https://www.tutorialrepublic.com/examples/images/avatar/3.jpg'
-                      className='avatar'
-                      alt='Avatar'
-                    />
-                    Avinash Tripathi
+                    My Account
                   </Dropdown.Toggle>
                   <Dropdown.Menu show={showDropdown}>
                     <Dropdown.Item href='#/action-1'>Profile</Dropdown.Item>
