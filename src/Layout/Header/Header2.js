@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Header2.css';
-import agwate from './agwate.png';
-
 import { Dropdown, Nav, Navbar } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 const Header2 = () => {

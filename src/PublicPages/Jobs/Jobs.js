@@ -92,7 +92,6 @@ const Jobs = (props) => {
         <div className='row '>
           <div className='col-md-3 mt-2'>
             <Filter />
-            <TopSideBarMenu />
           </div>
           <div className='col-md-7 mt-2'>
             <JobCards data={jobsData} />
@@ -104,7 +103,7 @@ const Jobs = (props) => {
                 }}>
                 Apply to 1414 Java Job Vacancies in Noida
               </h4>
-              <div className='bg-white shadow p-2 mb-2 mt-2'>
+              <div className='bg-white p-2 mb-2 mt-2'>
                 <TabsComponent data={PeopleAlsoConsider} />
               </div>
             </div>
@@ -113,7 +112,6 @@ const Jobs = (props) => {
             <SideBar data={JobsInTopLocations} />
             <SideBar data={JobsbyCategory} />
             <SideBar data={QuickLink} />
-            <TopSideBarJobs />
           </div>
         </div>
       </div>

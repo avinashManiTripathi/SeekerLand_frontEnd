@@ -9,7 +9,7 @@ module.exports = function (app) {
     next();
   });
 
-  app.post('/api/v1/itskills/save', controller.AddITSkills);
+  app.post('/api/v1/itskills', controller.AddITSkills);
   app.put('/api/v1/itskills/:id', controller.UpdateITSkills);
   app.get('/api/v1/itskills/:id', controller.findITSkillsById);
   app.get('/api/v1/itskills/projects', controller.findAllITSkillsBySeekerId);

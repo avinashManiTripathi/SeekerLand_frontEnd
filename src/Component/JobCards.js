@@ -29,14 +29,14 @@ const JobCards = ({ data }) => {
       {data &&
         data.map((data) => {
           return (
-            <div className='job-card-wrapper '>
+            <div className='job-card-wrapper job-cards'>
               <div className='job-card-inner'>
                 <div onClick={() => handleOnClickJobCard(data.id)}>
                   <h2>{data.title}</h2>
                   <h3>{data.companyName}</h3>
                   <div className='job-card-svl'>
                     <span>
-                      <i className='fa fa-inr'></i>120000
+                     <i class="fa fa-database" aria-hidden="true"></i>120000
                     </span>
                     <span>
                       <i className='fa fa-user'></i>25
@@ -64,7 +64,7 @@ const JobCards = ({ data }) => {
                 <hr />
                 <div className='row'>
                   <div className='d-flex col-md-9'>
-                    <p
+                    {/* <p
                       className=' d-flex justify-content-start'
                       style={{ padding: '0px opx' }}>
                       Post On 2 Days Ago
@@ -76,18 +76,17 @@ const JobCards = ({ data }) => {
                           style={{
                             margin: '0px 5px',
                             fontSize: '12px',
-                            fontWeight: 'bold',
                           }}>
-                          4889999
+                          488
                         </span>{' '}
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                   <div className='col-md-3 d-flex justify-content-end'>
-                    <button className='job-card-footer-icon'>
+                    <button type="button" name="share" className='job-card-footer-icon'>
                       <i className='fa fa-star-o' aria-hidden='true'></i>
                     </button>
-                    <button className='job-card-footer-icon'>
+                    <button type="button" name="save" className='job-card-footer-icon'>
                       <i className='fa fa-share-alt' aria-hidden='true'></i>
                     </button>
 

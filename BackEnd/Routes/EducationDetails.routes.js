@@ -9,7 +9,7 @@ module.exports = function (app) {
     next();
   });
 
-  app.post('/api/v1/education/save', controller.AddEducationDetails);
+  app.post('/api/v1/education-details', controller.AddEducationDetails);
   app.put('/api/v1/education/update', controller.UpdateEducationDetails);
   app.get(
     '/api/v1/education/educations',

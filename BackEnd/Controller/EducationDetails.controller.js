@@ -4,20 +4,14 @@ const EducationDetails = db.educationDetail;
 
 exports.AddEducationDetails = async (req, res) => {
   try {
-    const educationDetails = new EducationDetails({
-      education: req.body.education,
-      universityName: req.body.universityName,
-      specialization: req.body.specialization,
-      course: req.body.course,
-      fromDate: req.body.fromDate,
-      toDate: req.body.toDate,
-      courseType: req.body.courseType,
-    });
+    const educationDetails = new EducationDetails(
+      req.body
+    );
     await educationDetails.save(function (error, education) {
       if (error)
         res
           .status(500)
-          .send({ message: 'something went wrong please try again ' });
+          .send({ message: 'Something went wrong please try again ' });
 
       if (education)
         res

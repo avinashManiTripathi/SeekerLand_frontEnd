@@ -28,93 +28,7 @@ export const PeopleAlsoConsider = [
         id: '1',
         name: 'php jobs in Delhi/NCR',
       },
-      {
-        id: '1',
-        name: 'spring jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Delhi/NCR',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Delhi/NCR',
-      },
-    ],
-  },
-  {
-    id: '2',
-    title: 'Bangaluru',
-    locations: [
-      {
-        id: '1',
-        name: 'java jobs in Bangaluru',
-      },
-
-      {
-        id: '1',
-        name: 'hibernate jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
-      },
+     
       {
         id: '1',
         name: 'J2EE jobs in Bangaluru',
@@ -147,55 +61,6 @@ export const PeopleAlsoConsider = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Chennai',
-      },
-
-      {
-        id: '1',
-        name: 'hibernate jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Chennai',
-      },
-      {
-        id: '1',
         name: 'spring jobs in Chennai',
       },
       {
@@ -213,50 +78,6 @@ export const PeopleAlsoConsider = [
         name: 'java jobs in Mumbai',
       },
 
-      {
-        id: '1',
-        name: 'hibernate jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Mumbai',
-      },
       {
         id: '1',
         name: 'spring jobs in Mumbai',
@@ -284,50 +105,6 @@ export const PeopleAlsoConsider = [
         name: 'java jobs in Hyderabad',
       },
 
-      {
-        id: '1',
-        name: 'hibernate jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Hyderabad',
-      },
       {
         id: '1',
         name: 'spring jobs in Hyderabad',
@@ -358,42 +135,6 @@ export const PeopleAlsoConsider = [
       {
         id: '1',
         name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Gurugram',
       },
       {
         id: '1',

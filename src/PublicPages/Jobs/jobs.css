@@ -8,6 +8,13 @@
   background-color: #ffffff;
   cursor: pointer;
 }
+
+.job-cards:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: 0px 0px 10px 0px !important;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 .job-card-inner h2 {
   line-height: 1.2;
   word-break: break-word;
@@ -18,7 +25,7 @@
 }
 .job-card-inner h3 {
   font-size: 13px;
-  color: #6c54da;
+  color: #14016a;
 }
 .job-card-inner p {
   margin: 5px 0px 0px 0px !important;

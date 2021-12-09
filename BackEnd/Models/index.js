@@ -11,5 +11,5 @@ db.educationDetail = require('./EducationDetail.model');
 db.project = require('./Project.model');
 db.appliedJobs = require('./AppliedJobs.model');
 db.savedJobs = require('./SavedJobs.model');
-
+db.jobPreferences = require('./JobPreferences.model');
 module.exports = db;

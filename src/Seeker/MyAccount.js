@@ -16,6 +16,9 @@ import {
 import UserProfileCard from './AccountPages/UserProfileCard';
 import SideBar from '../Layout/SideBar/SideBar';
 import { QuickLink } from '../SiideBarJSON';
+import MyAccountEducation from './AccountPages/EducationDetails';
+import ITSkills from './AccountPages/ITSkills';
+import JobPreferences from './AccountPages/JobPreferences';
 
 const MyAccount = (props) => {
   return (
@@ -82,7 +85,7 @@ const MyAccount = (props) => {
             <MyAccountSkillCard />
           </div>
           <div className='mt-2'>
-            <MyAccountEducationCard />
+            <MyAccountEducation />
           </div>
           <div className='mt-2'>
             <MyAccountExperienceCard />
@@ -91,13 +94,13 @@ const MyAccount = (props) => {
             <MyAccountProjectsCard />
           </div>
           <div className='mt-2'>
-            <MyAccountJobPreferencesCard />
+            <JobPreferences />
           </div>
           <div className='mt-2'>
             <MyAccountPersonalDetailsCard />
           </div>
           <div className='mt-2'>
-            <MyAccountSkillTableCard />
+            <ITSkills />
           </div>
         </div>
       </div>

@@ -81,6 +81,11 @@ export const MyAccountSkillCard = (props) => {
 };
 
 export const MyAccountEducationCard = (props) => {
+  const [showModel, setShowModel] = useState(false);
+  const handleEducationDetails = () => {
+    setShowModel(true);
+  };
+
   return (
     <div className='my-account-card shadow bg-white p-3'>
       <div className='row'>
@@ -88,7 +93,10 @@ export const MyAccountEducationCard = (props) => {
           <h2>Educational Details</h2>
         </div>
         <div className='col-md-6'>
-          <Link to='#' className='d-flex justify-content-end add-link'>
+          <Link
+            to='#'
+            onClick={handleEducationDetails}
+            className='d-flex justify-content-end add-link'>
             Educational Details +
           </Link>
         </div>
@@ -101,6 +109,126 @@ export const MyAccountEducationCard = (props) => {
         <p>Babu Banarasi Das University</p>
         <p>2019 (Full time)</p>
       </div>
+      <FormModel
+        title='Add Education Details'
+        show={showModel}
+        size='lg'
+        onHide={() => setShowModel(false)}>
+        <form>
+          <div className='form-group'>
+            <label for='exampleInputEmail1'>Enter Education</label>
+            <input
+              type='text'
+              className='form-control'
+              placeholder='Enter Education'
+            />
+            <small id='emailHelp' className='form-text text-muted'>
+              Education shoould be maximum size 30 word
+            </small>
+          </div>
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>University Name</label>
+            <input
+              type='text'
+              className='form-control'
+              id='exampleInputPassword1'
+              placeholder='Enter University Name'
+            />
+          </div>
+
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>Specialization</label>
+            <input
+              type='text'
+              className='form-control'
+              placeholder='Enter University specialization'
+            />
+          </div>
+
+          <div className='row'>
+            <div className='col-md-6'>
+              <div className='form-group'>
+                <label for='exampleInputPassword1'>Course</label>
+                <select
+                  className='form-select form-control'
+                  aria-label='Default select example'>
+                  <option selected>BCA</option>
+                  <option value='1'>B-TECH</option>
+                  <option value='2'>BSC</option>
+                  <option value='3'>BA</option>
+                </select>
+              </div>
+            </div>
+            <div className='col-md-6'>
+              <div className='form-group'>
+                <label for='exampleInputPassword1'>Course Type</label>
+                <select
+                  className='form-select form-control'
+                  aria-label='Default select example'>
+                  <option selected>Full Time</option>
+                  <option value='1'>Distance</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div className='row'>
+            <div className='col-md-6'>
+              <div className='form-group'>
+                <label for='exampleInputPassword1'>Starting To</label>
+                <select
+                  className='form-select form-control'
+                  aria-label='Default select example'>
+                  <option selected>2020</option>
+                  <option value='1'>One</option>
+                  <option value='2'>Two</option>
+                  <option value='3'>Three</option>
+                </select>
+              </div>
+            </div>
+            <div className='col-md-6'>
+              <div className='form-group'>
+                <label for='exampleInputPassword1'>Starting From</label>
+                <select
+                  className='form-select form-control'
+                  aria-label='Default select example'>
+                  <option selected>2021</option>
+                  <option value='1'>One</option>
+                  <option value='2'>Two</option>
+                  <option value='3'>Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div className='d-flex '>
+            <div className='form-group m-2'>
+              <input type='radio' className='custom-control-input' />
+              <label
+                className='custom-control-label m-2'
+                for='customRadioInline1'>
+                In Progress
+              </label>
+            </div>
+            <div className='form-group m-2'>
+              <input type='radio' className='custom-control-input' />
+              <label
+                className='custom-control-label  m-2'
+                for='customRadioInline1'>
+                In Progress
+              </label>
+            </div>
+          </div>
+
+          <div className='form-group m-2'>
+            <label for='exampleInputPassword1'>Education Description</label>
+            <textarea
+              className='form-control'
+              placeholder='Enter Description '
+            />
+          </div>
+        </form>
+      </FormModel>
     </div>
   );
 };
@@ -152,7 +280,7 @@ export const MyAccountPersonalDetailsCard = (props) => {
       <h2>
         Personal Details <button className='fa fa-pencil edit'></button>
       </h2>
-      <div className='mt-3 details'>
+      <div className='p-3 details'>
         <div className='row'>
           <div className='col-md-6'>
             <div className='row'>
@@ -331,6 +459,7 @@ export const MyAccountProjectsCard = (props) => {
       <FormModel
         title='Add Project'
         show={showModel}
+        size='lg'
         onHide={() => setShowModel(false)}>
         <form>
           <div className='form-group'>
@@ -431,6 +560,11 @@ export const MyAccountProjectsCard = (props) => {
 };
 
 export const MyAccountSkillTableCard = (props) => {
+  const [showModel, setShowModel] = useState(false);
+  const handleAddItSkills = () => {
+    setShowModel(true);
+  };
+
   return (
     <div className='my-account-card shadow bg-white p-3'>
       <div className='row'>
@@ -438,7 +572,10 @@ export const MyAccountSkillTableCard = (props) => {
           <h2>IT Skills</h2>
         </div>
         <div className='col-md-6'>
-          <Link to='#' className='d-flex justify-content-end add-link'>
+          <Link
+            onClick={handleAddItSkills}
+            to='#'
+            className='d-flex justify-content-end add-link'>
             IT Skills +
           </Link>
         </div>
@@ -524,6 +661,47 @@ export const MyAccountSkillTableCard = (props) => {
           </tbody>
         </table>
       </div>
+
+      <FormModel
+        title='Add IT Skills'
+        show={showModel}
+        size='md'
+        onHide={() => setShowModel(false)}>
+        <form>
+          <div className='form-group'>
+            <label for='exampleInputEmail1'>Skill</label>
+            <input
+              type='text'
+              className='form-control'
+              placeholder='Enter your Skills'
+            />
+          </div>
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>Version</label>
+            <input
+              type='number'
+              className='form-control'
+              placeholder='Enter Version'
+            />
+          </div>
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>Last Used</label>
+            <input
+              type='date'
+              className='form-control'
+              placeholder='Enter Version'
+            />
+          </div>
+          <div className='form-group'>
+            <label for='exampleInputPassword1'>Experience</label>
+            <input
+              type='number'
+              className='form-control'
+              placeholder='Enter Experience'
+            />
+          </div>
+        </form>
+      </FormModel>
     </div>
   );
 };

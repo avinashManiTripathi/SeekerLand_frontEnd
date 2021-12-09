@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { RegistrationAction } from '../Actions/Registration.action';
+import { FormErrors } from './FormErrors';
 import './signUp.css';
 const SignUp = () => {
   const Registration = useSelector((state) => state.registrationReducer);
@@ -15,12 +16,61 @@ const SignUp = () => {
     mobileNumber: '',
     email: '',
     password: '',
+    formErrors: { email: '', password: '' },
+    emailValid: false,
+    passwordValid: false,
+    formValid: false,
   });
 
   const onInputChange = (e) => {
     setSeeker({ ...seeker, [e.target.name]: e.target.value });
+    validateField(e.target.name, e.target.value);
   };
-  const { firstName, lastName, gender, mobileNumber, email } = seeker;
+  const {
+    firstName,
+    lastName,
+    formErrors,
+    emailValid,
+    passwordValid,
+    formValid,
+  } = seeker;
+
+  const validateField = (fieldName, value) => {
+    let fieldValidationErrors = seeker.formErrors;
+    let emailValid = seeker.emailValid;
+    let passwordValid = seeker.passwordValid;
+
+    switch (fieldName) {
+      case 'email':
+        emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+        fieldValidationErrors.email = emailValid ? '' : ' is invalid';
+        break;
+      case 'password':
+        passwordValid = value.length >= 6;
+        fieldValidationErrors.password = passwordValid ? '' : ' is too short';
+        break;
+      default:
+        break;
+    }
+    setSeeker(
+      {
+        formErrors: fieldValidationErrors,
+        emailValid: emailValid,
+        passwordValid: passwordValid,
+      },
+      validateForm
+    );
+  };
+
+  const validateForm = () => {
+    this.setState({
+      formValid: seeker.emailValid && seeker.passwordValid,
+    });
+  };
+
+  const errorClass = (error) => {
+    return error.length === 0 ? '' : 'has-error';
+  };
 
   const OnSubmitRegistration = (e) => {
     e.preventDefault();
@@ -74,6 +124,9 @@ const SignUp = () => {
                 <ProgressBar animated now={progress} />
               </div>
               <br />
+
+              <FormErrors formError={formErrors} />
+
               {step === 1 && (
                 <div>
                   <div className='form-card'>
