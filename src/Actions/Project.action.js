@@ -1,4 +1,4 @@
-import { Axios } from 'axios';
+import Axios from 'axios';
 import {
   SEEKER_PROJECT_UPLOAD_REQUEST,
   SEEKER_PROJECT_UPLOAD_SUCCESS,
@@ -23,8 +23,16 @@ export const ProjectUploadAction = (project) => async (dispatch) => {
   });
   try {
     await Axios.post(
-      'http://localhost:5000/api/v1/upload-project',
-      project
+      'https://agwate.herokuapp.com/api/v1/seeker/project',
+      {
+        projectTitle: project.projectTitle,
+        projectStatus: project.projectStatus,
+        client: project.client,
+        fromDate: project.fromDate,
+        toDate: project.toDate,
+        description: project.description,
+      },
+      { withCredentials: true }
     ).then((response) => {
       dispatch({
         type: SEEKER_PROJECT_UPLOAD_SUCCESS,
@@ -47,11 +55,11 @@ export const FindProjectByIdAction = (id) => async (dispatch) => {
     type: SEEKER_PROJECT_FINDBYID_REQUEST,
   });
   try {
-    await Axios.get(`http://localhost:5000/api/vi/project?id=${id}`).then(
+    await Axios.get(`https://agwate.herokuapp.com/api/vi/project?id=${id}`).then(
       (response) => {
         dispatch({
           type: SEEKER_PROJECT_FINDBYID_SUCCESS,
-          payload: data,
+          payload: response.data,
         });
       }
     );
@@ -72,7 +80,7 @@ export const ProjectUpdateAction = (project) => async (dispatch) => {
   });
   try {
     await Axios.put(
-      'http://localhost:5000/api/v1/upload-project',
+      'https://agwate.herokuapp.com/api/v1/upload-project',
       project
     ).then((response) => {
       dispatch({
@@ -96,15 +104,14 @@ export const ProjectDeleteAction = (id) => async (dispatch) => {
     type: SEEKER_PROJECT_DELETE_REQUEST,
   });
   try {
-    await Axios.delete(
-      `http://localhost:5000/api/v1/project/${id}`,
-      project
-    ).then((response) => {
-      dispatch({
-        type: SEEKER_PROJECT_DELETE_SUCCESS,
-        payload: response,
-      });
-    });
+    await Axios.delete(`https://agwate.herokuapp.com/api/v1/project/${id}`).then(
+      (response) => {
+        dispatch({
+          type: SEEKER_PROJECT_DELETE_SUCCESS,
+          payload: response,
+        });
+      }
+    );
   } catch (error) {
     dispatch({
       type: SEEKER_PROJECT_DELETE_FAILED,
@@ -116,19 +123,20 @@ export const ProjectDeleteAction = (id) => async (dispatch) => {
   }
 };
 
-export const ProjectFindBySeekerId = () => async (dispatch) => {
+export const ProjectFindBySeekerIdAction = () => async (dispatch) => {
   dispatch({
     type: SEEKER_PROJECT_FINDBYSEEKERID_REQUEST,
   });
   try {
-    await Axios.get(`http://localhost:5000/api/v1/project/${id}`, project).then(
-      (response) => {
-        dispatch({
-          type: SEEKER_PROJECT_FINDBYSEEKERID_SUCCESS,
-          payload: response,
-        });
-      }
-    );
+    await Axios.get('https://agwate.herokuapp.com/api/v1/seeker/project', {
+      withCredentials: true,
+    }).then((response) => {
+      console.log('Seeker Project Action', response);
+      dispatch({
+        type: SEEKER_PROJECT_FINDBYSEEKERID_SUCCESS,
+        payload: response.data,
+      });
+    });
   } catch (error) {
     dispatch({
       type: SEEKER_PROJECT_FINDBYSEEKERID_FAILED,

@@ -1,3 +1,4 @@
+import Axios from 'axios';
 import {
   SEEKER_JOBPREFERENCES_DELETE_FAILED,
   SEEKER_JOBPREFERENCES_DELETE_REQUEST,
@@ -13,42 +14,44 @@ import {
   SEEKER_JOBPREFERENCES_UPLOAD_SUCCESS,
 } from '../Constants/JobPreferences.constant';
 
-export const JobPreferenceUploadAction = (education) => async (dispatch) => {
-  dispatch({
-    type: SEEKER_JOBPREFERENCES_UPLOAD_REQUEST,
-  });
-  try {
-    Axios.post(
-      'http://localhost:5000/api/v1/education-details',
-      education
-    ).then((response) => {
-      dispatch({
-        type: SEEKER_JOBPREFERENCES_UPLOAD_SUCCESS,
-        type: response,
-      });
-    });
-  } catch (error) {
+export const JobPreferenceUploadAction =
+  (jobPreferences) => async (dispatch) => {
     dispatch({
-      type: SEEKER_JOBPREFERENCES_UPLOAD_FAILED,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      type: SEEKER_JOBPREFERENCES_UPLOAD_REQUEST,
     });
-  }
-};
+    try {
+      Axios.post(
+        'https://agwate.herokuapp.com/api/v1/JobPreferences',
+        jobPreferences,
+        { withCredentials: true }
+      ).then((response) => {
+        dispatch({
+          type: SEEKER_JOBPREFERENCES_UPLOAD_SUCCESS,
+          payload: response,
+        });
+      });
+    } catch (error) {
+      dispatch({
+        type: SEEKER_JOBPREFERENCES_UPLOAD_FAILED,
+        payload:
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message,
+      });
+    }
+  };
 export const JobPreferenceUpdateAction = (education) => async (dispatch) => {
   dispatch({
     type: SEEKER_JOBPREFERENCES_UPDATE_REQUEST,
   });
   try {
     Axios.post(
-      'http://localhost:5000/api/v1/education-details',
+      'https://agwate.herokuapp.com/api/v1/education-details',
       education
     ).then((response) => {
       dispatch({
         type: SEEKER_JOBPREFERENCES_UPDATE_SUCCESS,
-        type: response,
+        payload: response,
       });
     });
   } catch (error) {
@@ -61,18 +64,18 @@ export const JobPreferenceUpdateAction = (education) => async (dispatch) => {
     });
   }
 };
-export const JobPreferenceFindByIdAction = (education) => async (dispatch) => {
+export const JobPreferenceFindBySeekerIdAction = () => async (dispatch) => {
   dispatch({
     type: SEEKER_JOBPREFERENCES_FINDBYSEEKERID_REQUEST,
   });
   try {
-    Axios.post(
-      'http://localhost:5000/api/v1/education-details',
-      education
-    ).then((response) => {
+    Axios.get('https://agwate.herokuapp.com/api/v1/seeker/JobPreferences', {
+      withCredentials: true,
+    }).then((response) => {
+      console.log('Action Response ', response.data.data);
       dispatch({
         type: SEEKER_JOBPREFERENCES_FINDBYSEEKERID_SUCCESS,
-        type: response,
+        payload: response.data.data,
       });
     });
   } catch (error) {
@@ -92,12 +95,12 @@ export const JobPreferenceDeleteAction = (education) => async (dispatch) => {
   });
   try {
     Axios.post(
-      'http://localhost:5000/api/v1/education-details',
+      'https://agwate.herokuapp.com/api/v1/education-details',
       education
     ).then((response) => {
       dispatch({
         type: SEEKER_JOBPREFERENCES_DELETE_SUCCESS,
-        type: response,
+        payload: response,
       });
     });
   } catch (error) {

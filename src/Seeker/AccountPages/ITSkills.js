@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { ITSkillsUploadAction } from '../../Actions/ITSkills.action';
+import {
+  ITSkillsFindBySeekerIdAction,
+  ITSkillsUploadAction,
+} from '../../Actions/ITSkills.action';
 import FormModel from '../Models/FormModel';
 
 const ITSkills = (props) => {
@@ -12,6 +15,9 @@ const ITSkills = (props) => {
     experience: '',
     lastUsed: '',
   });
+  const { seekerITSkills } = useSelector(
+    (state) => state.iTSKillsFindBySeekerIdIdReducers
+  );
 
   const dispatch = useDispatch();
   const onInputChange = (e) => {
@@ -27,8 +33,12 @@ const ITSkills = (props) => {
     setShowModel(true);
   };
 
+  useEffect(() => {
+    dispatch(ITSkillsFindBySeekerIdAction());
+  }, [dispatch]);
+
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card  bg-white p-3'>
       <div className='row'>
         <div className='col-md-6'>
           <h2>IT Skills</h2>
@@ -38,7 +48,7 @@ const ITSkills = (props) => {
             onClick={handleAddItSkills}
             to='#'
             className='d-flex justify-content-end add-link'>
-            IT Skills +
+            + Add More
           </Link>
         </div>
       </div>
@@ -54,72 +64,22 @@ const ITSkills = (props) => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope='row'>HTML5</th>
-              <td>5</td>
-              <td>2021</td>
-              <td>2 Years 0 Month</td>
-              <td className='action'>
-                <i className='fa fa-pencil'></i>
+            {seekerITSkills &&
+              seekerITSkills.map((skills) => {
+                return (
+                  <tr>
+                    <th scope='row'>{skills.skillName}</th>
+                    <td>{skills.version}</td>
+                    <td>{skills.lastUsed}</td>
+                    <td>{skills.experience}</td>
+                    <td className='action'>
+                      <i className='fa fa-pencil'></i>
 
-                <i className='fa fa-trash'></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>Java </th>
-              <td>11</td>
-              <td>2021</td>
-              <td>1 Years 0 Month</td>
-              <td className='action'>
-                <i className='fa fa-pencil'></i>
-
-                <i className='fa fa-trash'></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>Spring</th>
-              <td>5</td>
-              <td>2021</td>
-              <td>3 Years 0 Month</td>
-              <td className='action'>
-                <i className='fa fa-pencil'></i>
-
-                <i className='fa fa-trash'></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>CSS</th>
-              <td>5</td>
-              <td>2019</td>
-              <td>3 Years 0 Month</td>
-              <td className='action'>
-                <i className='fa fa-pencil'></i>
-
-                <i className='fa fa-trash'></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>HTML5</th>
-              <td>5</td>
-              <td>2021</td>
-              <td>2 Years 0 Month</td>
-              <td className='action'>
-                <i className='fa fa-pencil'></i>
-
-                <i className='fa fa-trash'></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope='row'>Java </th>
-              <td>11</td>
-              <td>2021</td>
-              <td>1 Years 0 Month</td>
-              <td className='action'>
-                <i className='fa fa-pencil'></i>
-
-                <i className='fa fa-trash'></i>
-              </td>
-            </tr>
+                      <i className='fa fa-trash'></i>
+                    </td>
+                  </tr>
+                );
+              })}
           </tbody>
         </table>
       </div>

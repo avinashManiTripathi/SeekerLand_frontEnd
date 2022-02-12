@@ -32,7 +32,6 @@ checkDuplicateEmail = (req, res, next) => {
       res.status(404).send({ message: 'Failed ! Email Already Exist ' });
       return;
     }
-
     next();
   });
 };

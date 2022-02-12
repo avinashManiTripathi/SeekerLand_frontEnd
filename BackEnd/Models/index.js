@@ -12,4 +12,7 @@ db.project = require('./Project.model');
 db.appliedJobs = require('./AppliedJobs.model');
 db.savedJobs = require('./SavedJobs.model');
 db.jobPreferences = require('./JobPreferences.model');
+db.job = require('./Jobs.model');
+db.personalDetail = require('./PersonalDetails.model');
+db.recruiter = require('./Recruiter.model');
 module.exports = db;

@@ -1,4 +1,5 @@
 const controller = require('../controller/Project.controller');
+const authJwt = require('../Middleware/verifyToken');
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -9,9 +10,17 @@ module.exports = function (app) {
     next();
   });
 
-  app.post('/api/v1/project/save', controller.AddProject);
+  app.post(
+    '/api/v1/seeker/project',
+    [authJwt.verifyToken],
+    controller.AddProject
+  );
   app.put('/api/v1/project/:id', controller.UpdateProject);
   app.get('/api/v1/project/:id', controller.findProjectById);
-  app.get('/api/v1/project/projects', controller.findAllProjectBySeekerId);
+  app.get(
+    '/api/v1/seeker/project',
+    [authJwt.verifyToken],
+    controller.findAllProjectBySeekerId
+  );
   app.delete('/api/v1/project/:id', controller.deleteProjectById);
 };

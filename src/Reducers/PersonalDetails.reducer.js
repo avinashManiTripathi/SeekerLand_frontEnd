@@ -60,7 +60,11 @@ export const PersonalDetailsFindBySeekerIdReducer = (state = {}, action) => {
     case SEEKER_PERSONALDETAILS_FINDBYSEEKERID_REQUEST:
       return { loading: true };
     case SEEKER_PERSONALDETAILS_FINDBYSEEKERID_SUCCESS:
-      return { ...state, loading: false, seeker: action.payload };
+      return {
+        ...state,
+        loading: false,
+        seekerPersonalDetails: action.payload,
+      };
     case SEEKER_PERSONALDETAILS_FINDBYSEEKERID_FAILED:
       return { loading: false, error: action.payload };
     default:

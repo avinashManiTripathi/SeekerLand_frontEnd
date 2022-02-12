@@ -1,5 +1,4 @@
 import Axios from 'axios';
-import { SEEKER_EDUCATIONDETAIL_UPLOAD_SUCCESS } from '../Constants/EducationDetail.constant';
 import {
   SEEKER_ITSKILLS_DELETE_FAILED,
   SEEKER_ITSKILLS_DELETE_REQUEST,
@@ -23,12 +22,16 @@ export const ITSkillsUploadAction = (itSkills) => async (dispatch) => {
     type: SEEKER_ITSKILLS_UPLOAD_REQUEST,
   });
   try {
-    await Axios.post('http://localhost:5000/api/v1/itskills', {
-      skillName: itSkills.skillName,
-      version: itSkills.version,
-      lastUsed: itSkills.lastUsed,
-      experience: itSkills.experience,
-    }).then((response) => {
+    await Axios.post(
+      'https://agwate.herokuapp.com/api/v1/seeker/itskills',
+      {
+        skillName: itSkills.skillName,
+        version: itSkills.version,
+        lastUsed: itSkills.lastUsed,
+        experience: itSkills.experience,
+      },
+      { withCredentials: true }
+    ).then((response) => {
       dispatch({
         type: SEEKER_ITSKILLS_UPLOAD_SUCCESS,
         payload: response,
@@ -90,15 +93,17 @@ export const ITSkillsFindByIdAction = (itSkills) => async (dispatch) => {
   }
 };
 
-export const ITSkillsFindBySeekerIdAction = (itSkills) => async (dispatch) => {
+export const ITSkillsFindBySeekerIdAction = () => async (dispatch) => {
   dispatch({
     type: SEEKER_ITSKILLS_FINDBYSEEKERID_REQUEST,
   });
   try {
-    await Axios.get('http://localost').then((response) => {
+    await Axios.get('https://agwate.herokuapp.com/api/v1/seeker/itskills', {
+      withCredentials: true,
+    }).then((response) => {
       dispatch({
         type: SEEKER_ITSKILLS_FINDBYSEEKERID_SUCCESS,
-        payload: response,
+        payload: response.data.data,
       });
     });
   } catch (error) {

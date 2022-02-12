@@ -1,53 +1,79 @@
 const mongoose = require('mongoose');
-const SeekerSchema = mongoose.Schema({
-  firstName: {
-    type: String,
-    required: true,
-    trim: true,
-    lowercase: true,
-  },
-  lastName: {
-    type: String,
-    required: true,
-    trim: true,
-    lowercase: true,
-  },
-  password: {
-    type: String,
-    required: true,
-  },
-  gender: {
-    type: String,
-    required: true,
-    enum: ['male', 'female'],
-  },
-  email: {
-    type: String,
-    trim: true,
-    lowercase: true,
-    unique: true,
-    validate: {
-      validator: function (v) {
-        return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      },
-      message: 'Please enter a valid email',
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const SeekerSchema = mongoose.Schema(
+  {
+    firstName: {
+      type: String,
+      required: true,
+      trim: true,
+      lowercase: true,
     },
-    required: [true, 'Email required'],
-  },
-  mobileNumber: {
-    type: Number,
-    required: true,
-    trim: true,
-    unique: true,
-    validate: {
-      validator: function (arr) {
-        return (arr.length = 10);
-      },
-      message: 'Mobile Number Length should be 10 ',
+    lastName: {
+      type: String,
+      required: true,
+      trim: true,
+      lowercase: true,
     },
+    password: {
+      type: String,
+      required: true,
+    },
+    gender: {
+      type: String,
+      required: true,
+      enum: ['male', 'female'],
+    },
+    email: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      unique: true,
+      validate: {
+        validator: function (v) {
+          return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        },
+        message: 'Please enter a valid email',
+      },
+      required: [true, 'Email required'],
+    },
+    mobileNumber: {
+      type: Number,
+      required: true,
+      trim: true,
+      unique: true,
+      validate: {
+        validator: function (arr) {
+          return (arr.length = 10);
+        },
+        message: 'Mobile Number Length should be 10 ',
+      },
+    },
+    created_at: { type: Date, default: Date.now },
   },
-  created_at: { type: Date, default: Date.now },
+  {
+    toJSON: { virtuals: true },
+  }
+);
+
+SeekerSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) {
+    next();
+  }
+  this.password = await bcrypt.hash(this.password, 10);
 });
+
+//JWT Token
+SeekerSchema.methods.getJWTToken = function () {
+  return jwt.sign({ id: this._id }, process.env.JWT_AUTH_TOKEN, {
+    expiresIn: process.env.JWT_AUTH_TOKEN_EXPIRES,
+  });
+};
+
+//compare password
+SeekerSchema.methods.comparePassword = async function (enteredPassword) {
+  return await bcrypt.compare(enteredPassword, this.password);
+};
 
 const Seeker = new mongoose.model('Seeker', SeekerSchema);
 module.exports = Seeker;

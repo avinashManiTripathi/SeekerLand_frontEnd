@@ -23,7 +23,7 @@ export const MyAccountUploadResmeCard = (props) => {
     }
   };
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card bg-white p-3'>
       <h2>Upload Resume</h2>
 
       <div className='d-flex justify-content-center border m-2 p-5'>
@@ -56,14 +56,14 @@ export const MyAccountUploadResmeCard = (props) => {
 
 export const MyAccountSkillCard = (props) => {
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card bg-white p-3'>
       <div className='row'>
         <div className='col-md-6'>
           <h2>Key Skills</h2>
         </div>
         <div className='col-md-6 '>
           <Link to='#' className='d-flex justify-content-end add-link'>
-            Add Skills +
+            + Add More
           </Link>
         </div>
       </div>
@@ -235,14 +235,14 @@ export const MyAccountEducationCard = (props) => {
 
 export const MyAccountExperienceCard = (props) => {
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card  bg-white p-3'>
       <div className='row'>
         <div className='col-md-6'>
           <h2>Work Experience</h2>
         </div>
         <div className='col-md-6'>
           <Link to='#' className='d-flex justify-content-end add-link'>
-            Work Experience +
+            + Add More
           </Link>
         </div>
       </div>
@@ -260,7 +260,7 @@ export const MyAccountExperienceCard = (props) => {
 
 export const MyAccountProfileSummaryCard = (props) => {
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card  bg-white p-3'>
       <h2>
         Profile Summary <button className='fa fa-pencil edit'></button>
       </h2>
@@ -276,7 +276,7 @@ export const MyAccountProfileSummaryCard = (props) => {
 
 export const MyAccountPersonalDetailsCard = (props) => {
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card  bg-white p-3'>
       <h2>
         Personal Details <button className='fa fa-pencil edit'></button>
       </h2>
@@ -404,157 +404,6 @@ export const MyAccountJobPreferencesCard = (props) => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export const MyAccountProjectsCard = (props) => {
-  const [showModel, setShowModel] = useState(false);
-  const handleAddProject = () => {
-    setShowModel(true);
-  };
-
-  return (
-    <div>
-      <div className='my-account-card shadow bg-white p-3'>
-        <div className='row'>
-          <div className='col-md-6'>
-            <h2>Project</h2>
-          </div>
-          <div className='col-md-6'>
-            <Link
-              onClick={handleAddProject}
-              to='#'
-              className='d-flex justify-content-end add-link'>
-              Add Project +
-            </Link>
-          </div>
-        </div>
-
-        <div className='mt-3 details'>
-          <h3>
-            Agwate.com <button className='fa fa-pencil edit'></button>
-          </h3>
-          <p>
-            this is the web application where I used html css javascript
-            bootstrap4 and in Back end I used php and mysql this website is in
-            the online server if you want then you can check it out{' '}
-          </p>
-          <p>2019 (Full time)</p>
-        </div>
-        <div className='mt-3 details'>
-          <h3>
-            Employee Management System{' '}
-            <button className='fa fa-pencil edit'></button>
-          </h3>
-          <p>
-            this is the web application where I used html css javascript
-            bootstrap4 and in Back end I used php and mysql this website is in
-            the online server if you want then you can check it out{' '}
-          </p>
-          <p>2019 (Full time)</p>
-        </div>
-      </div>
-
-      <FormModel
-        title='Add Project'
-        show={showModel}
-        size='lg'
-        onHide={() => setShowModel(false)}>
-        <form>
-          <div className='form-group'>
-            <label for='exampleInputEmail1'>Project Title</label>
-            <input
-              type='text'
-              className='form-control'
-              placeholder='Enter Project Title'
-            />
-            <small id='emailHelp' className='form-text text-muted'>
-              Project Title shoould be maximum size 30 word
-            </small>
-          </div>
-          <div className='form-group'>
-            <label for='exampleInputPassword1'>Client</label>
-            <input
-              type='password'
-              className='form-control'
-              id='exampleInputPassword1'
-              placeholder='Enter Client Name'
-            />
-          </div>
-
-          <div className='form-group'>
-            <label for='exampleInputPassword1'>
-              {' '}
-              Tag this project with your Employment/Education
-            </label>
-            <select
-              className='form-select form-control'
-              aria-label='Default select example'>
-              <option selected>2020</option>
-              <option value='1'>One</option>
-              <option value='2'>Two</option>
-              <option value='3'>Three</option>
-            </select>
-          </div>
-
-          <div className='row'>
-            <div className='col-md-6'>
-              <div className='form-group'>
-                <label for='exampleInputPassword1'>Starting From</label>
-                <select
-                  className='form-select form-control'
-                  aria-label='Default select example'>
-                  <option selected>2020</option>
-                  <option value='1'>One</option>
-                  <option value='2'>Two</option>
-                  <option value='3'>Three</option>
-                </select>
-              </div>
-            </div>
-            <div className='col-md-6'>
-              <div className='form-group'>
-                <label for='exampleInputPassword1'>Starting From</label>
-                <select
-                  className='form-select form-control'
-                  aria-label='Default select example'>
-                  <option selected>2021</option>
-                  <option value='1'>One</option>
-                  <option value='2'>Two</option>
-                  <option value='3'>Three</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div className='d-flex '>
-            <div className='form-group m-2'>
-              <input type='radio' className='custom-control-input' />
-              <label
-                className='custom-control-label m-2'
-                for='customRadioInline1'>
-                In Progress
-              </label>
-            </div>
-            <div className='form-group m-2'>
-              <input type='radio' className='custom-control-input' />
-              <label
-                className='custom-control-label  m-2'
-                for='customRadioInline1'>
-                In Progress
-              </label>
-            </div>
-          </div>
-
-          <div className='form-group m-2'>
-            <label for='exampleInputPassword1'>Project Description</label>
-            <textarea
-              className='form-control'
-              placeholder='Enter Description '
-            />
-          </div>
-        </form>
-      </FormModel>
     </div>
   );
 };

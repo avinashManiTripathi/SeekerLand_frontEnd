@@ -15,8 +15,15 @@ import {
   ITSKillsUploadReducers,
 } from './Reducers/ITSkills.reducer';
 import {
+  ApplyJobReducers,
+  FindAppliedJobBySeekerIdReducers,
+  FindJobByIdReducers,
+  FindSavedJobBySeekerIdReducers,
+  FindSkillsJobsInLocationReducer,
+} from './Reducers/Job.reducer';
+import {
   JobPrefrenceDeleteReducers,
-  JobPrefrenceFindByIdReducers,
+  JobPrefrenceFindBySeekerIdReducers,
   JobPrefrenceUpdateReducers,
   JobPrefrenceUploadReducers,
 } from './Reducers/JobPreference.reducer';
@@ -41,7 +48,12 @@ import {
   ProjectUpdateReducers,
   ProjectUploadReducers,
 } from './Reducers/Project.reducer';
-import { RegistrationReducers } from './Reducers/Registration.reducer';
+import {
+  LoginReducers,
+  LogoutReducers,
+  RegistrationReducers,
+  SeekerDetailReducers,
+} from './Reducers/Registration.reducer';
 import {
   WorkExperienceDeleteReducers,
   WorkExperienceFindByIdReducers,
@@ -70,13 +82,13 @@ const reducer = combineReducers({
   workExperienceUpdateReducers: WorkExperienceUpdateReducers,
   iTSKillsUploadReducers: ITSKillsUploadReducers,
   iTSKillsUpdateReducers: ITSKillsUpdateReducers,
-  iTSKillsUpdateReducers: ITSKillsDeleteReducers,
-  iTSKillsUpdateReducers: ITSKillsFindBySeekerIdIdReducers,
+  iTSKillsDeleteReducers: ITSKillsDeleteReducers,
+  iTSKillsFindBySeekerIdIdReducers: ITSKillsFindBySeekerIdIdReducers,
   iTSKillsFindByIdReducers: ITSKillsFindByIdReducers,
   jobPrefrenceUploadReducers: JobPrefrenceUploadReducers,
   jobPrefrenceUpdateReducers: JobPrefrenceUpdateReducers,
   jobPrefrenceDeleteReducers: JobPrefrenceDeleteReducers,
-  jobPrefrenceFindByIdReducers: JobPrefrenceFindByIdReducers,
+  jobPrefrenceFindByIdSeekerReducers: JobPrefrenceFindBySeekerIdReducers,
   keySkillsUploadReducer: KeySkillsUploadReducer,
   keySkillsUpdateReducer: KeySkillsUpdateReducer,
   keySkillsFindByIdIdReducers: KeySkillsFindByIdIdReducers,
@@ -87,6 +99,14 @@ const reducer = combineReducers({
   personalDetailsFindByIdReducer: PersonalDetailsFindByIdReducer,
   personalDetailsFindBySeekerIdReducer: PersonalDetailsFindBySeekerIdReducer,
   personalDetailsDeleteReducer: PersonalDetailsDeleteReducer,
+  findSkillsJobsInLocationReducer: FindSkillsJobsInLocationReducer,
+  loginReducer: LoginReducers,
+  applyJobReducers: ApplyJobReducers,
+  findSavedJobBySeekerIdReducers: FindSavedJobBySeekerIdReducers,
+  findAppliedJobBySeekerIdReducers: FindAppliedJobBySeekerIdReducers,
+  seekerDetailReducers: SeekerDetailReducers,
+  logoutReducers: LogoutReducers,
+  findJobByIdReducers: FindJobByIdReducers,
 });
 const composeEnhancers =
   (typeof window !== 'undefined' &&

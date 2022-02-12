@@ -22,20 +22,23 @@ export const EducationDetailUploadAction = (education) => async (dispatch) => {
     type: SEEKER_EDUCATIONDETAIL_UPLOAD_REQUEST,
   });
   try {
-    await Axios.post('http://localhost:5000/api/v1/education-details', {
-      education: education.education,
-      specialization: education.specialization,
-      universityName: education.universityName,
-      fromDate: education.fromDate,
-      toDate: education.toDate,
-      course: education.course,
-      courseType: education.courseType,
-    }).then((response) => {
+    await Axios.post(
+      'https://agwate.herokuapp.com/api/v1/seeker/educations',
+      {
+        education: education.education,
+        specialization: education.specialization,
+        universityName: education.universityName,
+        fromDate: education.fromDate,
+        toDate: education.toDate,
+        course: education.course,
+        courseType: education.courseType,
+      },
+      { withCredentials: true }
+    ).then((response) => {
       dispatch({
         type: SEEKER_EDUCATIONDETAIL_UPLOAD_SUCCESS,
-        type: response,
+        payload: response,
       });
-      console.log('REsponse ', response);
     });
   } catch (error) {
     dispatch({
@@ -54,12 +57,12 @@ export const EducationDetailUpdateAction = (education) => async (dispatch) => {
   });
   try {
     Axios.post(
-      'http://localhost:5000/api/v1/education-details',
+      'https://agwate.herokuapp.com/api/v1/education-details',
       education
     ).then((response) => {
       dispatch({
         type: SEEKER_EDUCATIONDETAIL_UPDATE_SUCCESS,
-        type: response,
+        payload: response,
       });
     });
   } catch (error) {
@@ -78,11 +81,11 @@ export const EducationDetailFindByIDAction = (id) => async (dispatch) => {
     type: SEEKER_EDUCATIONDETAIL_FINDBYID_REQUEST,
   });
   try {
-    Axios.get(`http://localhost:5000/api/v1/education-details?id=${id}`).then(
+    Axios.get(`https://agwate.herokuapp.com/api/v1/education-details?id=${id}`).then(
       (response) => {
         dispatch({
           type: SEEKER_EDUCATIONDETAIL_FINDBYID_SUCCESS,
-          type: response,
+          payload: response,
         });
       }
     );
@@ -103,11 +106,11 @@ export const EducationDetailDeleteAction = (id) => async (dispatch) => {
   });
   try {
     Axios.delete(
-      `http://localhost:5000/api/v1/education-details?id=${id}`
+      `https://agwate.herokuapp.com/api/v1/education-details?id=${id}`
     ).then((response) => {
       dispatch({
         type: SEEKER_EDUCATIONDETAIL_DELETE_SUCCESS,
-        type: response,
+        payload: response,
       });
     });
   } catch (error) {
@@ -121,19 +124,19 @@ export const EducationDetailDeleteAction = (id) => async (dispatch) => {
   }
 };
 
-export const EducationDetailFindBySeekerIdAction = (id) => async (dispatch) => {
+export const EducationDetailFindBySeekerIdAction = () => async (dispatch) => {
   dispatch({
     type: SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_REQUEST,
   });
   try {
-    Axios.get(`http://localhost:5000/api/v1/education-details`).then(
-      (response) => {
-        dispatch({
-          type: SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_SUCCESS,
-          type: response,
-        });
-      }
-    );
+    Axios.get(`https://agwate.herokuapp.com/api/v1/seeker/educations`, {
+      withCredentials: true,
+    }).then((response) => {
+      dispatch({
+        type: SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_SUCCESS,
+        payload: response.data.data,
+      });
+    });
   } catch (error) {
     dispatch({
       type: SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_FAILED,

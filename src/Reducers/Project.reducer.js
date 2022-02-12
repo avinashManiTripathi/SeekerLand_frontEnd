@@ -70,7 +70,7 @@ export const ProjectFindBySeekerIdReducers = (state = {}, action) => {
     case SEEKER_PROJECT_FINDBYSEEKERID_REQUEST:
       return { loading: true };
     case SEEKER_PROJECT_FINDBYSEEKERID_SUCCESS:
-      return { ...state, loading: false, seeker: action.payload };
+      return { ...state, loading: false, seekerProject: action.payload };
     case SEEKER_PROJECT_FINDBYSEEKERID_FAILED:
       return { loading: false, error: action.payload };
     default:

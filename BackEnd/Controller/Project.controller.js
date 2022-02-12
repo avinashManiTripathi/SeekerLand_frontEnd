@@ -3,19 +3,13 @@ const Project = db.project;
 
 exports.AddProject = async (req, res) => {
   try {
-    const project = new Project({
-      projectTitle: req.body.projectTitle,
-      projectStatus: req.body.projectStatus,
-      client: req.body.client,
-      fromDate: req.body.fromDate,
-      toDate: req.body.toDate,
-      description: req.body.description,
-    });
-    await project.save(function (error, project) {
-      if (error)
+    req.body.seeker = req.seekerId;
+    const project = new Project(req.body);
+    await project.save(function (err, project) {
+      if (err)
         res
           .status(500)
-          .send({ message: 'something went wrong please try again ' });
+          .send({ message: err + 'something went wrong please try again ' });
 
       if (project)
         res.status(201).send({ message: 'Project Details Added SuccessFully' });
@@ -74,14 +68,14 @@ exports.findProjectById = async (req, res) => {
 
 exports.findAllProjectBySeekerId = async (req, res) => {
   try {
-    await Project.find({ seeker: req.seekerId }, function (err, Project) {
+    await Project.find({ seeker: req.seekerId }, function (err, project) {
       if (err) {
         res.send({ message: err });
       }
       if (project) {
         res.send(project);
       }
-    });
+    }).clone();
   } catch (error) {
     res.status(500).send({ message: error });
   }

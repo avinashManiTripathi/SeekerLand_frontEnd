@@ -1,24 +1,29 @@
 import React, { useState } from 'react';
 import './Header2.css';
 import { Dropdown, Nav, Navbar } from 'react-bootstrap';
-import { Link, useLocation } from 'react-router-dom';
-const Header2 = () => {
-  const localtion = useLocation();
+import { Link, useHistory } from 'react-router-dom';
+import { capitalize } from '../../Helper/Utility';
+import { useDispatch } from 'react-redux';
+import { LogoutAction } from '../../Actions/Registration.action';
+const Header2 = ({ isAuthenticated, seeker }) => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const dispatch = useDispatch();
+  const history = useHistory();
 
-  const isLoggedIn = localStorage.getItem('isLoggedIn');
-  console.log('', localtion.pathname);
-
-  const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
+  const onClickLogout = () => {
+    dispatch(LogoutAction());
+    history.push('/signin');
   };
 
   return (
-    <Navbar collapseOnSelect expand='lg' bg='white' variant='white  fixed-top '>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      bg='white'
+      variant='white  fixed-top  '>
       <div className='container-fluid'>
         <Link to='/' className='navbar-brand'>
           <i className='fa fa-cube'></i>
-          {/* <img src={agwate} className=''></img> */}
           <b> Agwate</b>
         </Link>
         <button
@@ -36,13 +41,47 @@ const Header2 = () => {
               <span>Home</span>
             </Link>
 
-            <Link to='/jobs' className='nav-item nav-link'>
+            <Link to='/' className='dropdown nav-item nav-link active'>
               <i className='fa fa-briefcase'></i>
               <span>Jobs</span>
+              <div class='dropdown-content'>
+                <ul
+                  class='list-group'
+                  style={{
+                    listStyleType: 'none',
+                  }}>
+                  <li>
+                    <Link class='dropdown-item' to='/java-jobs-in-noida'>
+                      Jobs By Location
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class='dropdown-item' to='#'>
+                      Jobs By Role
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class='dropdown-item' to='/'>
+                      Jobs By Category
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class='dropdown-item' to='/'>
+                      Jobs By Country
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class='dropdown-item' to='/'>
+                      Jobs By Companies
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </Link>
+
             <Link to='/recruiters' className='nav-item nav-link'>
               <i className='fa fa-users'></i>
-              <span>Recruiters</span>
+              <span>Connections</span>
             </Link>
             <Link to='/' className='nav-item nav-link'>
               <i className='fa fa-pie-chart'></i>
@@ -62,38 +101,41 @@ const Header2 = () => {
             </Link>
           </Nav>
           <Nav>
-            {isLoggedIn ? (
-              <>
-                <Dropdown
-                  onMouseLeave={() => setShowDropdown(false)}
-                  onMouseOver={() => setShowDropdown(true)}
-                  //   className='btn-signIn'
-                >
-                  <Dropdown.Toggle
-                    id='dropdown-basic'
-                    className='user-action-dropdown'>
-                    My Account
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu show={showDropdown}>
-                    <Dropdown.Item href='#/action-1'>Profile</Dropdown.Item>
-                    <Dropdown.Item href='#/action-2'>Settings</Dropdown.Item>
-                    <Dropdown.Item href='#/action-2'>
-                      Update Phone
-                    </Dropdown.Item>
-                    <Dropdown.Item onClick={handleLogout}>
-                      Log Out
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </>
+            <Link
+              className='postjob-button'
+              to='/signin'
+              style={{ marginRight: '20px' }}>
+              Employers/Post Job
+            </Link>
+
+            {isAuthenticated ? (
+              <Link to='#' className='dropdown nav-item nav-link active border'>
+                <span> {capitalize(seeker.firstName)}</span>
+                <div class='dropdown-content'>
+                  <ul
+                    class='list-group'
+                    style={{
+                      listStyleType: 'none',
+                    }}>
+                    <li>
+                      <Link class='dropdown-item' to='/dashboard'>
+                        My Profile
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        class='dropdown-item'
+                        onClick={onClickLogout}
+                        to='/'>
+                        log out
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </Link>
             ) : (
               <>
-                <Link
-                  className='postjob-button'
-                  to='/signin'
-                  style={{ marginRight: '20px' }}>
-                  Employers/Post Job
-                </Link>
                 <Link
                   className='nav-link'
                   to='/signUp'

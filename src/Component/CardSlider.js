@@ -41,7 +41,7 @@ const CardSlider = ({ data }) => {
       {data &&
         data.map((data) => {
           return (
-            <div className='card-slider'>
+            <div className='card-slider' key={data.id}>
               <h2>{data.title} </h2>
               <h3>SpeckyFox Technologies</h3>
               <p>3 - 4 Years</p>

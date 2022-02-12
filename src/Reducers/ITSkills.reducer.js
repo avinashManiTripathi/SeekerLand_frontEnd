@@ -71,7 +71,7 @@ export const ITSKillsFindBySeekerIdIdReducers = (state = {}, action) => {
     case SEEKER_ITSKILLS_FINDBYSEEKERID_REQUEST:
       return { loading: true };
     case SEEKER_ITSKILLS_FINDBYSEEKERID_SUCCESS:
-      return { ...state, loading: false, seeker: action.payload };
+      return { ...state, loading: false, seekerITSkills: action.payload };
     case SEEKER_ITSKILLS_FINDBYSEEKERID_FAILED:
       return { loading: false, error: action.payload };
     default:

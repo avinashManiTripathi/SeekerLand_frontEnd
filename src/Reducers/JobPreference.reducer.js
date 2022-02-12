@@ -38,12 +38,12 @@ export const JobPrefrenceUpdateReducers = (state = {}, action) => {
       return state;
   }
 };
-export const JobPrefrenceFindByIdReducers = (state = {}, action) => {
+export const JobPrefrenceFindBySeekerIdReducers = (state = {}, action) => {
   switch (action.type) {
     case SEEKER_JOBPREFERENCES_FINDBYSEEKERID_REQUEST:
       return { loading: true };
     case SEEKER_JOBPREFERENCES_FINDBYSEEKERID_SUCCESS:
-      return { ...state, loading: false, seeker: action.payload };
+      return { ...state, loading: false, seekerJobPreferences: action.payload };
     case SEEKER_JOBPREFERENCES_FINDBYSEEKERID_FAILED:
       return { loading: false, error: action.payload };
     default:

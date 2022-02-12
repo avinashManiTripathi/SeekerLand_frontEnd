@@ -59,7 +59,11 @@ export const EducationDetailFindBySeekerIdReducers = (state = {}, action) => {
     case SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_REQUEST:
       return { loading: true };
     case SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_SUCCESS:
-      return { ...state, loading: false, seeker: action.payload };
+      return {
+        ...state,
+        loading: false,
+        seekerEducationDetails: action.payload,
+      };
     case SEEKER_EDUCATIONDETAIL_FINDBYSEEKERID_FAILED:
       return { loading: false, error: action.payload };
     default:

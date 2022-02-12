@@ -1,3 +1,4 @@
+import Axios from 'axios';
 import {
   SEEKER_PERSONALDETAILS_DELETE_FAILED,
   SEEKER_PERSONALDETAILS_DELETE_REQUEST,
@@ -16,30 +17,32 @@ import {
   SEEKER_PERSONALDETAILS_UPLOAD_SUCCESS,
 } from '../Constants/PersonalDetails.constant';
 
-export const PersonalDetailsUploadAction = (project) => async (dispatch) => {
-  dispatch({
-    type: SEEKER_PERSONALDETAILS_UPLOAD_REQUEST,
-  });
-  try {
-    await Axios.post(
-      'http://localhost:5000/api/v1/upload-project',
-      project
-    ).then((response) => {
-      dispatch({
-        type: SEEKER_PERSONALDETAILS_UPLOAD_SUCCESS,
-        payload: response,
-      });
-    });
-  } catch (error) {
+export const PersonalDetailsUploadAction =
+  (personalDetail) => async (dispatch) => {
     dispatch({
-      type: SEEKER_PERSONALDETAILS_UPLOAD_FAILED,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      type: SEEKER_PERSONALDETAILS_UPLOAD_REQUEST,
     });
-  }
-};
+    try {
+      await Axios.post(
+        'https://agwate.herokuapp.com/api/v1/seeker/personalDetails',
+        personalDetail,
+        { withCredentials: true }
+      ).then((response) => {
+        dispatch({
+          type: SEEKER_PERSONALDETAILS_UPLOAD_SUCCESS,
+          payload: response,
+        });
+      });
+    } catch (error) {
+      dispatch({
+        type: SEEKER_PERSONALDETAILS_UPLOAD_FAILED,
+        payload:
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message,
+      });
+    }
+  };
 
 export const PersonalDetailsUpdateAction = (project) => async (dispatch) => {
   dispatch({
@@ -47,7 +50,7 @@ export const PersonalDetailsUpdateAction = (project) => async (dispatch) => {
   });
   try {
     await Axios.post(
-      'http://localhost:5000/api/v1/upload-project',
+      'https://agwate.herokuapp.com/api/v1/upload-project',
       project
     ).then((response) => {
       dispatch({
@@ -72,7 +75,7 @@ export const PersonalDetailsDeleteAction = (project) => async (dispatch) => {
   });
   try {
     await Axios.post(
-      'http://localhost:5000/api/v1/upload-project',
+      'https://agwate.herokuapp.com/api/v1/upload-project',
       project
     ).then((response) => {
       dispatch({
@@ -97,7 +100,7 @@ export const PersonalDetailsFindByIdAction = (project) => async (dispatch) => {
   });
   try {
     await Axios.post(
-      'http://localhost:5000/api/v1/upload-project',
+      'https://agwate.herokuapp.com/api/v1/upload-project',
       project
     ).then((response) => {
       dispatch({
@@ -116,28 +119,26 @@ export const PersonalDetailsFindByIdAction = (project) => async (dispatch) => {
   }
 };
 
-export const PersonalDetailsFindBySeekerIdAction =
-  (project) => async (dispatch) => {
-    dispatch({
-      type: SEEKER_PERSONALDETAILS_FINDBYSEEKERID_REQUEST,
-    });
-    try {
-      await Axios.post(
-        'http://localhost:5000/api/v1/upload-project',
-        project
-      ).then((response) => {
-        dispatch({
-          type: SEEKER_PERSONALDETAILS_FINDBYSEEKERID_SUCCESS,
-          payload: response,
-        });
-      });
-    } catch (error) {
+export const PersonalDetailsFindBySeekerIdAction = () => async (dispatch) => {
+  dispatch({
+    type: SEEKER_PERSONALDETAILS_FINDBYSEEKERID_REQUEST,
+  });
+  try {
+    await Axios.get('https://agwate.herokuapp.com/api/v1/seeker/personalDetails', {
+      withCredentials: true,
+    }).then((response) => {
       dispatch({
-        type: SEEKER_PERSONALDETAILS_FINDBYSEEKERID_FAILED,
-        payload:
-          error.response && error.response.data.message
-            ? error.response.data.message
-            : error.message,
+        type: SEEKER_PERSONALDETAILS_FINDBYSEEKERID_SUCCESS,
+        payload: response.data.data,
       });
-    }
-  };
+    });
+  } catch (error) {
+    dispatch({
+      type: SEEKER_PERSONALDETAILS_FINDBYSEEKERID_FAILED,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
+};

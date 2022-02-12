@@ -5,7 +5,8 @@ import { RegistrationAction } from '../Actions/Registration.action';
 import { FormErrors } from './FormErrors';
 import './signUp.css';
 const SignUp = () => {
-  const Registration = useSelector((state) => state.registrationReducer);
+  useSelector((state) => state.registrationReducer);
+
   const dispatch = useDispatch();
   const [step, setStep] = useState(1);
   const [progress, setProgress] = useState(25);
@@ -24,53 +25,46 @@ const SignUp = () => {
 
   const onInputChange = (e) => {
     setSeeker({ ...seeker, [e.target.name]: e.target.value });
-    validateField(e.target.name, e.target.value);
+    // validateField(e.target.name, e.target.value);
   };
-  const {
-    firstName,
-    lastName,
-    formErrors,
-    emailValid,
-    passwordValid,
-    formValid,
-  } = seeker;
+  const { firstName, lastName, formErrors } = seeker;
 
-  const validateField = (fieldName, value) => {
-    let fieldValidationErrors = seeker.formErrors;
-    let emailValid = seeker.emailValid;
-    let passwordValid = seeker.passwordValid;
+  // const validateField = (fieldName, value) => {
+  //   let fieldValidationErrors = seeker.formErrors;
+  //   let emailValid = seeker.emailValid;
+  //   let passwordValid = seeker.passwordValid;
 
-    switch (fieldName) {
-      case 'email':
-        emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors.email = emailValid ? '' : ' is invalid';
-        break;
-      case 'password':
-        passwordValid = value.length >= 6;
-        fieldValidationErrors.password = passwordValid ? '' : ' is too short';
-        break;
-      default:
-        break;
-    }
-    setSeeker(
-      {
-        formErrors: fieldValidationErrors,
-        emailValid: emailValid,
-        passwordValid: passwordValid,
-      },
-      validateForm
-    );
-  };
+  //   switch (fieldName) {
+  //     case 'email':
+  //       emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+  //       fieldValidationErrors.email = emailValid ? '' : ' is invalid';
+  //       break;
+  //     case 'password':
+  //       passwordValid = value.length >= 6;
+  //       fieldValidationErrors.password = passwordValid ? '' : ' is too short';
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  //   setSeeker(
+  //     {
+  //       formErrors: fieldValidationErrors,
+  //       emailValid: emailValid,
+  //       passwordValid: passwordValid,
+  //     },
+  //     validateForm
+  //   );
+  // };
 
-  const validateForm = () => {
-    this.setState({
-      formValid: seeker.emailValid && seeker.passwordValid,
-    });
-  };
+  // const validateForm = () => {
+  //   this.setState({
+  //     formValid: seeker.emailValid && seeker.passwordValid,
+  //   });
+  // };
 
-  const errorClass = (error) => {
-    return error.length === 0 ? '' : 'has-error';
-  };
+  // const errorClass = (error) => {
+  //   return error.length === 0 ? '' : 'has-error';
+  // };
 
   const OnSubmitRegistration = (e) => {
     e.preventDefault();

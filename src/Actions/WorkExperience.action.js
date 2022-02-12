@@ -22,7 +22,7 @@ export const WorkExperienceUploadAction = (experience) => async (dispatch) => {
   });
   try {
     await Axios.post(
-      'http://localhost:5000/api/v1/workExperience',
+      'https://agwate.herokuapp.com/api/v1/workExperience',
       experience
     ).then((response) => {
       dispatch({
@@ -47,7 +47,7 @@ export const WorkExperienceUpdateAction = (experience) => async (dispatch) => {
   });
   try {
     await Axios.post(
-      'http://localhost:5000/api/v1/workExperience',
+      'https://agwate.herokuapp.com/api/v1/workExperience',
       experience
     ).then((response) => {
       dispatch({
@@ -72,7 +72,7 @@ export const WorkExperienceDeleteAction = (experience) => async (dispatch) => {
   });
   try {
     await Axios.delete(
-      'http://localhost:5000/api/v1/workExperience',
+      'https://agwate.herokuapp.com/api/v1/workExperience',
       experience
     ).then((response) => {
       dispatch({
@@ -98,7 +98,7 @@ export const WorkExperienceFindBySeekerIdAction =
     });
     try {
       await Axios.get(
-        'http://localhost:5000/api/v1/workExperience',
+        'https://agwate.herokuapp.com/api/v1/workExperience',
         experience
       ).then((response) => {
         dispatch({
@@ -123,7 +123,7 @@ export const WorkExperienceFindByIdAction =
     });
     try {
       await Axios.get(
-        'http://localhost:5000/api/v1/workExperience',
+        'https://agwate.herokuapp.com/api/v1/workExperience',
         experience
       ).then((response) => {
         dispatch({

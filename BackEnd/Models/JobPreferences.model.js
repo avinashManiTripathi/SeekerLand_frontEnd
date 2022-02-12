@@ -1,28 +1,53 @@
 const mongoose = require('mongoose');
+const { seeker } = require('.');
 
-const JobPreferencesSchema = mongoose.Schema({
-  Industry: {
-    type: String,
-    required: true,
-  },
-  Function: {
-    type: String,
-    required: true,
-  },
+const JobPreferencesSchema = mongoose.Schema(
+  {
+    industry: {
+      type: String,
+      required: true,
+    },
+    function: {
+      type: String,
+      required: true,
+    },
 
-  EmploymentType: {
-    type: String,
-    required: true,
+    employmentType: {
+      type: String,
+      required: true,
+    },
+    preferredLocation: {
+      type: String,
+      required: true,
+    },
+    availabilityToJoin: {
+      type: String,
+      required: true,
+    },
+    jobType: {
+      type: String,
+      required: true,
+    },
+    role: {
+      type: String,
+      required: true,
+    },
+    preferredShift: {
+      type: String,
+      required: true,
+    },
+    expectedSalary: {
+      type: String,
+      required: true,
+    },
+    seeker: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Seeker',
+      required: true,
+    },
   },
-  PreferredLocation: {
-    type: String,
-    required: true,
-  },
-  AvailabilityToJoin: {
-    type: String,
-    required: true,
-  },
-});
+  { timestamps: true }
+);
 
 const JobPreferences = mongoose.model('JobPreferences', JobPreferencesSchema);
 module.exports = JobPreferences;

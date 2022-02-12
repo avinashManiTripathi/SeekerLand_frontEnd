@@ -4,12 +4,12 @@ import './SideBar.css';
 
 export const TopSideBarJobs = (props) => {
   return (
-    <div class='justify-content-center'>
-      <div class='col-md-12 shadow bg-white  d-flex align-items-stretch mb-3'>
-        <div class=' card  border-0 py-2'>
-          <div class='card-header bg-white border-0 mb-0'>
-            <div class='row justify-content-between'>
-              <div class='col-auto col-sm-auto'>
+    <div className='justify-content-center'>
+      <div className='col-md-12 shadow bg-white  d-flex align-items-stretch mb-3'>
+        <div className=' card  border-0 py-2'>
+          <div className='card-header bg-white border-0 mb-0'>
+            <div className='row justify-content-between'>
+              <div className='col-auto col-sm-auto'>
                 <h4>
                   {' '}
                   <span
@@ -25,17 +25,17 @@ export const TopSideBarJobs = (props) => {
                   </span>
                 </h4>
               </div>
-              <div class='col-auto col-sm-auto'>
-                <div class=' pt-2'>
+              <div className='col-auto col-sm-auto'>
+                <div className=' pt-2'>
                   <h5 style={{ fontSize: '13px' }}>$ 55/hr</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class=' card-body text-center pb-0 mt-0 pt-3'>
+          <div className=' card-body text-center pb-0 mt-0 pt-3'>
             <div>
               <h5
-                class='card-title mb-0 font-weight-bold'
+                className='card-title mb-0 font-weight-bold'
                 style={{ margin: '20px 0px', fontSize: '15px' }}>
                 UI/UX Designer
               </h5>{' '}
@@ -48,27 +48,27 @@ export const TopSideBarJobs = (props) => {
                 Speckyfox Technologies
               </small>
             </div>
-            <div class='d-inline-flex row mb-3 '>
-              <div class='col-md-auto'>
-                <ul class='list-inline my-0'>
-                  <li class='list-inline-item'>
+            <div className='d-inline-flex row mb-3 '>
+              <div className='col-md-auto'>
+                <ul className='list-inline my-0'>
+                  <li className='list-inline-item'>
                     {' '}
-                    <span class='badge badge-pill badge-outline '>UI</span>
+                    <span className='badge badge-pill badge-outline '>UI</span>
                   </li>
-                  <li class='list-inline-item'>
+                  <li className='list-inline-item'>
                     {' '}
-                    <span class='badge badge-pill badge-outline '>UX</span>
+                    <span className='badge badge-pill badge-outline '>UX</span>
                   </li>
-                  <li class='list-inline-item'>
+                  <li className='list-inline-item'>
                     {' '}
-                    <span class='badge badge-pill badge-outline '>
+                    <span className='badge badge-pill badge-outline '>
                       photoshop
                     </span>
                   </li>
-                  <li class='list-inline-item '>
+                  <li className='list-inline-item '>
                     {' '}
                     <button
-                      class='badge btn btn-danger badge-pill badge-primary'
+                      className='badge btn btn-danger badge-pill badge-primary'
                       type='button'>
                       +4
                     </button>
@@ -76,9 +76,9 @@ export const TopSideBarJobs = (props) => {
                 </ul>
               </div>
             </div>
-            <div class='d-flex row mb-0'>
-              <div class='col '>
-                <p class='sidebar-job-listing-desc'>
+            <div className='d-flex row mb-0'>
+              <div className='col '>
+                <p className='sidebar-job-listing-desc'>
                   {' '}
                   We are looking for an experience UI and UX designer to work on
                   our projects...{' '}
@@ -87,18 +87,18 @@ export const TopSideBarJobs = (props) => {
             </div>
           </div>
           <div>
-            <hr class='hl'></hr>
+            <hr className='hl'></hr>
           </div>
-          <div class='card-footer border-0 text-center mx-auto '>
+          <div className='card-footer border-0 text-center mx-auto '>
             <button className='btn btn-danger'>View Job</button>
           </div>
         </div>
       </div>
-      <div class='col-md-12 shadow bg-white  d-flex align-items-stretch mb-3'>
-        <div class=' card  border-0 py-2'>
-          <div class='card-header bg-white border-0 mb-0'>
-            <div class='row justify-content-between bg-white'>
-              <div class='col-auto col-sm-auto'>
+      <div className='col-md-12 shadow bg-white  d-flex align-items-stretch mb-3'>
+        <div className=' card  border-0 py-2'>
+          <div className='card-header bg-white border-0 mb-0'>
+            <div className='row justify-content-between bg-white'>
+              <div className='col-auto col-sm-auto'>
                 <h4>
                   {' '}
                   <span
@@ -114,46 +114,46 @@ export const TopSideBarJobs = (props) => {
                   </span>
                 </h4>
               </div>
-              <div class='col-auto col-sm-auto '>
-                <div class=' pt-2'>
+              <div className='col-auto col-sm-auto '>
+                <div className=' pt-2'>
                   <h5 style={{ fontSize: '13px' }}>$ 55/hr</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class=' card-body text-center pb-0 mt-0 pt-3'>
-            <div class='d-block'>
+          <div className=' card-body text-center pb-0 mt-0 pt-3'>
+            <div className='d-block'>
               <h5
-                class='card-title mb-0 font-weight-bold'
+                className='card-title mb-0 font-weight-bold'
                 style={{ fontSize: '15px' }}>
                 UI/UX Designer
               </h5>{' '}
-              <small class='text-info my-1'>
+              <small className='text-info my-1'>
                 {' '}
-                <i class='fa fa-file-code-o small'></i>Just For Pay
+                <i className='fa fa-file-code-o small'></i>Just For Pay
               </small>
             </div>
-            <div class='d-inline-flex row mb-3 '>
-              <div class='col-md-auto'>
-                <ul class='list-inline my-0'>
-                  <li class='list-inline-item'>
+            <div className='d-inline-flex row mb-3 '>
+              <div className='col-md-auto'>
+                <ul className='list-inline my-0'>
+                  <li className='list-inline-item'>
                     {' '}
-                    <span class='badge badge-pill badge-outline '>UI</span>
+                    <span className='badge badge-pill badge-outline '>UI</span>
                   </li>
-                  <li class='list-inline-item'>
+                  <li className='list-inline-item'>
                     {' '}
-                    <span class='badge badge-pill badge-outline '>UX</span>
+                    <span className='badge badge-pill badge-outline '>UX</span>
                   </li>
-                  <li class='list-inline-item'>
+                  <li className='list-inline-item'>
                     {' '}
-                    <span class='badge badge-pill badge-outline '>
+                    <span className='badge badge-pill badge-outline '>
                       photoshop
                     </span>
                   </li>
-                  <li class='list-inline-item '>
+                  <li className='list-inline-item '>
                     {' '}
                     <button
-                      class='badge btn btn-danger badge-pill badge-primary'
+                      className='badge btn btn-danger badge-pill badge-primary'
                       type='button'>
                       +4
                     </button>
@@ -161,8 +161,8 @@ export const TopSideBarJobs = (props) => {
                 </ul>
               </div>
             </div>
-            <div class='d-flex row mb-0'>
-              <div class='col '>
+            <div className='d-flex row mb-0'>
+              <div className='col '>
                 <p className='sidebar-job-listing-desc'>
                   {' '}
                   We are looking for an experience UI and UX designer to work on
@@ -172,9 +172,9 @@ export const TopSideBarJobs = (props) => {
             </div>
           </div>
           <div>
-            <hr class='hl'></hr>
+            <hr className='hl'></hr>
           </div>
-          <div class='card-footer border-0 text-center mx-auto '>
+          <div className='card-footer border-0 text-center mx-auto '>
             <button className='btn btn-danger'>View Job</button>
           </div>
         </div>
@@ -185,24 +185,24 @@ export const TopSideBarJobs = (props) => {
 
 export const TopSideBarMenu = (props) => {
   return (
-    <div class=' d-flex justify-content-center mb-2  '>
+    <div className=' d-flex justify-content-center mb-2  '>
       <div
-        class='card'
+        className='card'
         style={{
           background: '#2c3b5a',
           color: ' #f9f9f9',
           padding: '20px',
           borderRadius: '0px',
         }}>
-        <h5 class='pb-2 border-bottom'>Top Agwate Service</h5>
+        <h5 className='pb-2 border-bottom'>Top Agwate Service</h5>
 
-        <div class='row'>
-          <div class='col-md-6 d-flex justify-content-center'>
-            <div class='card insert ml-3 mb-3 container'>
+        <div className='row'>
+          <div className='col-md-6 d-flex justify-content-center'>
+            <div className='card insert ml-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/dotty/128/000000/2012.png'
-                class='center'
+                className='center'
                 alt='seekerland'
               />{' '}
               <span>Calender</span>
@@ -210,12 +210,12 @@ export const TopSideBarMenu = (props) => {
               <p>3 Events</p>
             </div>
           </div>
-          <div class='col-md-6 d-flex justify-content-center'>
-            <div class='card insert mr-3 mb-3 container'>
+          <div className='col-md-6 d-flex justify-content-center'>
+            <div className='card insert mr-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/color/128/000000/grocery-bag.png'
-                class='center'
+                className='center'
                 alt='seekerland'
               />{' '}
               <span>USA JOBS</span>
@@ -224,41 +224,41 @@ export const TopSideBarMenu = (props) => {
             </div>
           </div>
         </div>
-        <div class='row'>
-          <div class='col-md-6 d-flex justify-content-center'>
-            <div class='card insert ml-3 mb-3 container'>
+        <div className='row'>
+          <div className='col-md-6 d-flex justify-content-center'>
+            <div className='card insert ml-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/bubbles/128/000000/user-location.png'
-                class='center'
+                className='center'
                 alt='seekerland'
               />{' '}
               <span>Location</span>
               <p>Lucy mao going to office</p>
-              <p class='opaque'>o</p>
+              <p className='opaque'>o</p>
             </div>
           </div>
-          <div class='col-md-6 d-flex justify-content-center'>
-            <div class='card insert mr-3 mb-3 container'>
+          <div className='col-md-6 d-flex justify-content-center'>
+            <div className='card insert mr-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/fluent/128/000000/alarm.png'
-                class='center'
+                className='center'
                 alt='seekerland'
               />{' '}
               <span>Activity</span>
               <p>Rose favourited your post</p>
-              <p class='opaque'>o</p>
+              <p className='opaque'>o</p>
             </div>
           </div>
         </div>
-        <div class='row'>
-          <div class='col-md-6 d-flex justify-content-center'>
-            <div class='card insert ml-3 mb-3 container'>
+        <div className='row'>
+          <div className='col-md-6 d-flex justify-content-center'>
+            <div className='card insert ml-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/dusk/128/000000/checklist.png'
-                class='center'
+                className='center'
                 alt='seekerland'
               />{' '}
               <span>To do</span>
@@ -266,12 +266,12 @@ export const TopSideBarMenu = (props) => {
               <p>4 Items</p>
             </div>
           </div>
-          <div class='col-md-6 d-flex justify-content-center'>
-            <div class='card insert mr-3 mb-3 container'>
+          <div className='col-md-6 d-flex justify-content-center'>
+            <div className='card insert mr-3 mb-3 container'>
               {' '}
               <img
                 src='https://img.icons8.com/fluent/128/000000/settings.png'
-                class='center'
+                className='center'
                 alt='seekerland'
               />{' '}
               <span>Settings</span>
@@ -285,17 +285,38 @@ export const TopSideBarMenu = (props) => {
   );
 };
 
-const SideBar = ({ data }) => {
+const SideBar = (props) => {
+  const { data, skills } = props;
   return (
     <div className='quick-links-wrapper bg-white p-2'>
-      <h2>{data.title}</h2>
+      <h2>{data.title ? data.title : props.title} </h2>
+
       <div className='quick-links-inner'>
         {data &&
+          data.links &&
           data.links.map((links) => {
             return (
               <p key={links.id}>
-                <Link to='#' className='quick-links-inner-links'>
+                <Link to='' className='quick-links-inner-links'>
                   {links.name}
+                </Link>
+              </p>
+            );
+          })}
+
+        {data &&
+          data.india_city &&
+          data.india_city.map((links) => {
+            return (
+              <p key={links.id}>
+                <Link
+                  to={
+                    skills +
+                    `${skills ? '-' : ''}jobs-in-` +
+                    links.name.toLowerCase()
+                  }
+                  className='quick-links-inner-links'>
+                  {skills} Jobs In {links.name}
                 </Link>
               </p>
             );

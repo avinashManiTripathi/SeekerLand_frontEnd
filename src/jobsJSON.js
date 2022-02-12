@@ -281,7 +281,7 @@ export const jobsData = [
     ],
   },
   {
-    id: '1',
+    id: '7',
     title: 'Urgent Hiring for Java Developer',
     location: 'Noida',
     minSalary: '40000',
@@ -327,7 +327,7 @@ export const jobsData = [
     ],
   },
   {
-    id: '2',
+    id: '8',
     title: 'java Jobs In Delhi',
     location: 'new Delhi',
     minSalary: '40000',
@@ -374,7 +374,7 @@ export const jobsData = [
     ],
   },
   {
-    id: '3',
+    id: '9',
     title: 'Need Php Developers In Delhi',
     location: 'new Delhi',
     minSalary: '40000',
@@ -421,7 +421,7 @@ export const jobsData = [
     ],
   },
   {
-    id: '4',
+    id: '10',
     title: 'Urgent Hiring for Java Developer',
     location: 'Noida',
     minSalary: '40000',
@@ -468,7 +468,7 @@ export const jobsData = [
     ],
   },
   {
-    id: '5',
+    id: '11',
     title: 'java Jobs In Delhi',
     location: 'new Delhi',
     minSalary: '40000',
@@ -515,7 +515,7 @@ export const jobsData = [
     ],
   },
   {
-    id: '6',
+    id: '12',
     title: 'Need Php Developers In Delhi',
     location: 'new Delhi',
     minSalary: '40000',

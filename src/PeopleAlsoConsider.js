@@ -9,48 +9,48 @@ export const PeopleAlsoConsider = [
       },
 
       {
-        id: '1',
+        id: '2',
         name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
+        id: '3',
         name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
+        id: '4',
         name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
+        id: '5',
         name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
+        id: '6',
         name: 'php jobs in Delhi/NCR',
       },
-     
+
       {
-        id: '1',
+        id: '7',
         name: 'J2EE jobs in Bangaluru',
       },
       {
-        id: '1',
+        id: '8',
         name: 'CodeFire jobs in Bangaluru',
       },
       {
-        id: '1',
+        id: '9',
         name: 'spring jobs in Bangaluru',
       },
       {
-        id: '1',
+        id: '10',
         name: 'hibernate jobs in Bangaluru',
       },
       {
-        id: '1',
+        id: '11',
         name: 'Sql jobs in Bangaluru',
       },
       {
-        id: '1',
+        id: '12',
         name: 'Laravel jobs in Bangaluru',
       },
     ],
@@ -61,11 +61,53 @@ export const PeopleAlsoConsider = [
     locations: [
       {
         id: '1',
-        name: 'spring jobs in Chennai',
+        name: 'java jobs in Delhi/NCR',
+      },
+
+      {
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Chennai',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
+      },
+      {
+        id: '4',
+        name: 'Laravel jobs in Delhi/NCR',
+      },
+      {
+        id: '5',
+        name: 'java jobs in Delhi/NCR',
+      },
+      {
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
+      },
+
+      {
+        id: '7',
+        name: 'J2EE jobs in Bangaluru',
+      },
+      {
+        id: '8',
+        name: 'CodeFire jobs in Bangaluru',
+      },
+      {
+        id: '9',
+        name: 'spring jobs in Bangaluru',
+      },
+      {
+        id: '10',
+        name: 'hibernate jobs in Bangaluru',
+      },
+      {
+        id: '11',
+        name: 'Sql jobs in Bangaluru',
+      },
+      {
+        id: '12',
+        name: 'Laravel jobs in Bangaluru',
       },
     ],
   },
@@ -75,24 +117,53 @@ export const PeopleAlsoConsider = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Mumbai',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'spring jobs in Mumbai',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Mumbai',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Mumbai',
+        id: '4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Mumbai',
+        id: '5',
+        name: 'java jobs in Delhi/NCR',
+      },
+      {
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
+      },
+
+      {
+        id: '7',
+        name: 'J2EE jobs in Bangaluru',
+      },
+      {
+        id: '8',
+        name: 'CodeFire jobs in Bangaluru',
+      },
+      {
+        id: '9',
+        name: 'spring jobs in Bangaluru',
+      },
+      {
+        id: '10',
+        name: 'hibernate jobs in Bangaluru',
+      },
+      {
+        id: '11',
+        name: 'Sql jobs in Bangaluru',
+      },
+      {
+        id: '12',
+        name: 'Laravel jobs in Bangaluru',
       },
     ],
   },
@@ -102,24 +173,53 @@ export const PeopleAlsoConsider = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Hyderabad',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'spring jobs in Hyderabad',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Hyderabad',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Hyderabad',
+        id: '4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Hyderabad',
+        id: '5',
+        name: 'java jobs in Delhi/NCR',
+      },
+      {
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
+      },
+
+      {
+        id: '7',
+        name: 'J2EE jobs in Bangaluru',
+      },
+      {
+        id: '8',
+        name: 'CodeFire jobs in Bangaluru',
+      },
+      {
+        id: '9',
+        name: 'spring jobs in Bangaluru',
+      },
+      {
+        id: '10',
+        name: 'hibernate jobs in Bangaluru',
+      },
+      {
+        id: '11',
+        name: 'Sql jobs in Bangaluru',
+      },
+      {
+        id: '12',
+        name: 'Laravel jobs in Bangaluru',
       },
     ],
   },
@@ -129,31 +229,52 @@ export const PeopleAlsoConsider = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Gurugram',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'CodeFire jobs in Gurugram',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'spring jobs in Gurugram',
+        id: '4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '5',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
+      },
+
+      {
+        id: '7',
+        name: 'J2EE jobs in Bangaluru',
       },
       {
-        id: '1',
+        id: '8',
+        name: 'CodeFire jobs in Bangaluru',
+      },
+      {
+        id: '9',
+        name: 'spring jobs in Bangaluru',
+      },
+      {
+        id: '10',
+        name: 'hibernate jobs in Bangaluru',
+      },
+      {
+        id: '11',
+        name: 'Sql jobs in Bangaluru',
+      },
+      {
+        id: '12',
         name: 'Laravel jobs in Bangaluru',
       },
     ],

@@ -5,68 +5,171 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Delhi/NCR',
+        name: 'Software Engineering',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Delhi/NCR',
+        id: '2',
+        name: 'Marketng Manager ',
+      },
+      {
+        id: '3',
+        name: 'Sales Manager ',
+      },
+      {
+        id: ' 4',
+        name: 'BPO ',
+      },
+      {
+        id: '4',
+        name: 'Sales',
+      },
+      {
+        id: '6',
+        name: 'Call Manager',
+      },
+      {
+        id: '7',
+        name: 'Web Developer Designer ',
+      },
+      {
+        id: '8',
+        name: 'BackEnd Developer',
       },
       {
         id: '1',
-        name: 'Sql jobs in Delhi/NCR',
+        name: 'Software Engineering',
+      },
+
+      {
+        id: '2',
+        name: 'Marketng Manager ',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Delhi/NCR',
+        id: '3',
+        name: 'Sales Manager ',
       },
       {
-        id: '1',
-        name: 'java jobs in Delhi/NCR',
+        id: ' 4',
+        name: 'BPO ',
       },
       {
-        id: '1',
-        name: 'php jobs in Delhi/NCR',
+        id: '4',
+        name: 'Sales',
       },
       {
-        id: '1',
-        name: 'spring jobs in Delhi/NCR',
+        id: '6',
+        name: 'Call Manager',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Delhi/NCR',
+        id: '7',
+        name: 'Web Developer Designer ',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Delhi/NCR',
+        id: '8',
+        name: 'BackEnd Developer',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Delhi/NCR',
+        name: 'Acquisition skills',
       },
       {
-        id: '1',
-        name: 'java jobs in Delhi/NCR',
+        name: 'Analytical ability',
       },
       {
-        id: '1',
-        name: 'php jobs in Delhi/NCR',
+        name: 'Adaptability',
       },
       {
-        id: '1',
-        name: 'spring jobs in Delhi/NCR',
+        name: 'Execution willingness',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Delhi/NCR',
+        name: 'Resilience',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Delhi/NCR',
+        name: 'Advice ability',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Delhi/NCR',
+        name: 'Relationship Management / Networks',
+      },
+      {
+        name: 'Charisma',
+      },
+      {
+        name: 'Discipline',
+      },
+      {
+        name: 'Assertiveness',
+      },
+      {
+        name: 'Empathy',
+      },
+      {
+        name: 'Commitment and dedication',
+      },
+      {
+        name: 'Decisiveness',
+      },
+      {
+        name: 'Give feedback',
+      },
+      {
+        name: 'Flexibility',
+      },
+      {
+        name: 'Self-reflection ability',
+      },
+      {
+        name: 'Leadership',
+      },
+      {
+        name: 'Holistic thinking',
+      },
+      {
+        name: 'Patience',
+      },
+      {
+        name: 'Gender competence / diversity',
+      },
+      {
+        name: 'Credibility',
+      },
+      {
+        name: 'Helpfulness',
+      },
+      {
+        name: 'Identification with value system / tasks',
+      },
+      {
+        name: 'Initiative and energy',
+      },
+      {
+        name: 'Ability to integrate',
+      },
+      {
+        name: 'Intercultural Competence',
+      },
+      {
+        name: 'Communication skills',
+      },
+      {
+        name: 'Conflict resolution ability',
+      },
+      {
+        name: 'Concept Development',
+      },
+      {
+        name: 'Ability to cooperate',
+      },
+      {
+        name: 'Creativity Techniques',
+      },
+      {
+        name: 'Critical faculties',
+      },
+      {
+        name: 'Customer focus',
+      },
+      {
+        name: 'Lifelong learning',
       },
     ],
   },
@@ -75,69 +178,148 @@ export const FindJobVacanciesBy = [
     title: 'Localtions',
     locations: [
       {
-        id: '1',
-        name: 'java jobs in Bangaluru',
-      },
-
-      {
-        id: '1',
-        name: 'hibernate jobs in Bangaluru',
+        key: 'AN',
+        name: 'Andaman and Nicobar Islands',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Bangaluru',
+        key: 'AP',
+        name: 'Andhra Pradesh',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
+        key: 'AR',
+        name: 'Arunachal Pradesh',
       },
       {
-        id: '1',
-        name: 'java jobs in Bangaluru',
+        key: 'AS',
+        name: 'Assam',
       },
       {
-        id: '1',
-        name: 'php jobs in Bangaluru',
+        key: 'BR',
+        name: 'Bihar',
       },
       {
-        id: '1',
-        name: 'spring jobs in Bangaluru',
+        key: 'CG',
+        name: 'Chandigarh',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Bangaluru',
+        key: 'CH',
+        name: 'Chhattisgarh',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Bangaluru',
+        key: 'DH',
+        name: 'Dadra and Nagar Haveli',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
+        key: 'DD',
+        name: 'Daman and Diu',
       },
       {
-        id: '1',
-        name: 'J2EE jobs in Bangaluru',
+        key: 'DL',
+        name: 'Delhi',
       },
       {
-        id: '1',
-        name: 'CodeFire jobs in Bangaluru',
+        key: 'GA',
+        name: 'Goa',
       },
       {
-        id: '1',
-        name: 'spring jobs in Bangaluru',
+        key: 'GJ',
+        name: 'Gujarat',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Bangaluru',
+        key: 'HR',
+        name: 'Haryana',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Bangaluru',
+        key: 'HP',
+        name: 'Himachal Pradesh',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
+        key: 'JK',
+        name: 'Jammu and Kashmir',
+      },
+      {
+        key: 'JH',
+        name: 'Jharkhand',
+      },
+      {
+        key: 'KA',
+        name: 'Karnataka',
+      },
+      {
+        key: 'KL',
+        name: 'Kerala',
+      },
+      {
+        key: 'LD',
+        name: 'Lakshadweep',
+      },
+      {
+        key: 'MP',
+        name: 'Madhya Pradesh',
+      },
+      {
+        key: 'MH',
+        name: 'Maharashtra',
+      },
+      {
+        key: 'MN',
+        name: 'Manipur',
+      },
+      {
+        key: 'ML',
+        name: 'Meghalaya',
+      },
+      {
+        key: 'MZ',
+        name: 'Mizoram',
+      },
+      {
+        key: 'NL',
+        name: 'Nagaland',
+      },
+      {
+        key: 'OR',
+        name: 'Odisha',
+      },
+      {
+        key: 'PY',
+        name: 'Puducherry',
+      },
+      {
+        key: 'PB',
+        name: 'Punjab',
+      },
+      {
+        key: 'RJ',
+        name: 'Rajasthan',
+      },
+      {
+        key: 'SK',
+        name: 'Sikkim',
+      },
+      {
+        key: 'TN',
+        name: 'Tamil Nadu',
+      },
+      {
+        key: 'TS',
+        name: 'Telangana',
+      },
+      {
+        key: 'TR',
+        name: 'Tripura',
+      },
+      {
+        key: 'UK',
+        name: 'Uttar Pradesh',
+      },
+      {
+        key: 'UP',
+        name: 'Uttarakhand',
+      },
+      {
+        key: 'WB',
+        name: 'West Bengal',
       },
     ],
   },
@@ -147,60 +329,36 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Chennai',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Chennai',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Chennai',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Chennai',
+        id: ' 4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'java jobs in Chennai',
+        id: '4',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'php jobs in Chennai',
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'spring jobs in Chennai',
+        id: '7',
+        name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Chennai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Chennai',
+        id: '8',
+        name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
@@ -210,68 +368,36 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Mumbai',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Mumbai',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Mumbai',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Mumbai',
+        id: ' 4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'java jobs in Mumbai',
+        id: '4',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'php jobs in Mumbai',
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'spring jobs in Mumbai',
+        id: '7',
+        name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Mumbai',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Mumbai',
+        id: '8',
+        name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
@@ -281,68 +407,36 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Hyderabad',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Hyderabad',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Hyderabad',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Hyderabad',
+        id: ' 4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'java jobs in Hyderabad',
+        id: '4',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'php jobs in Hyderabad',
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'spring jobs in Hyderabad',
+        id: '7',
+        name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Bangaluru',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Hyderabad',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Hyderabad',
+        id: '8',
+        name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
@@ -352,68 +446,112 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Gurugram',
+        name: 'SpeckyFox Pvt Ltd',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '2',
+        name: 'MonsterIndia',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
+        id: '3',
+        name: 'IZS Techocrats',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
+        id: ' 4',
+        name: 'Wipro',
       },
       {
-        id: '1',
-        name: 'java jobs in Gurugram',
+        id: '4',
+        name: 'General Electric',
       },
       {
-        id: '1',
-        name: 'php jobs in Gurugram',
+        id: '6',
+        name: 'Wal-Mart Stores',
       },
       {
-        id: '1',
-        name: 'spring jobs in Gurugram',
+        id: '7',
+        name: 'Berkshire Hathaway ',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '8',
+        name: 'JP Morgan',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
+        id: '9',
+        name: 'Microsoft',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
+        id: '10',
+        name: 'Google',
       },
       {
-        id: '1',
-        name: 'J2EE jobs in Gurugram',
+        id: '11',
+        name: 'Twitter',
       },
       {
-        id: '1',
-        name: 'CodeFire jobs in Gurugram',
+        id: '12',
+        name: 'LinkedIn',
       },
       {
-        id: '1',
-        name: 'spring jobs in Gurugram',
+        id: '13',
+        name: 'You Tube',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '10',
+        name: 'Berkshire Hathaway',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
+        id: '11',
+        name: 'American International Group',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
+        id: '12',
+        name: 'United Technologies',
+      },
+      {
+        id: '13',
+        name: 'Danaher Corporation',
+      },
+      {
+        id: '13',
+        name: 'Whole Foods Market, Inc.',
+      },
+      {
+        id: '10',
+        name: 'Aramark Holdings Corporation',
+      },
+      {
+        id: '11',
+        name: 'Arrow Electronics, Inc',
+      },
+      {
+        id: '12',
+        name: 'Whirlpool Corporation',
+      },
+      {
+        id: '13',
+        name: 'Global Partners LP',
+      },
+      {
+        id: '13',
+        name: 'Whole Foods Market, Inc.',
+      },
+      {
+        id: '10',
+        name: 'Harley-Davidson, Inc',
+      },
+      {
+        id: '11',
+        name: 'Allergan, Inc',
+      },
+      {
+        id: '12',
+        name: 'GameStop Corp',
+      },
+      {
+        id: '13',
+        name: 'Principal Financial Group, Inc',
       },
     ],
   },
@@ -423,68 +561,36 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Gurugram',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
+        id: ' 4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'java jobs in Gurugram',
+        id: '4',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'php jobs in Gurugram',
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'spring jobs in Gurugram',
+        id: '7',
+        name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
+        id: '8',
+        name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
@@ -494,139 +600,36 @@ export const FindJobVacanciesBy = [
     locations: [
       {
         id: '1',
-        name: 'java jobs in Gurugram',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
+        id: '2',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
+        id: '3',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
+        id: ' 4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'java jobs in Gurugram',
+        id: '4',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'php jobs in Gurugram',
+        id: '6',
+        name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'spring jobs in Gurugram',
+        id: '7',
+        name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
-      },
-    ],
-  },
-  {
-    id: '9',
-    title: 'WORK FROM HOME',
-    locations: [
-      {
-        id: '1',
-        name: 'java jobs in Gurugram',
-      },
-
-      {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'java jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'php jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'J2EE jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'CodeFire jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'spring jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'hibernate jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Sql jobs in Gurugram',
-      },
-      {
-        id: '1',
-        name: 'Laravel jobs in Bangaluru',
+        id: '8',
+        name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },

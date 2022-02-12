@@ -1,49 +1,91 @@
-import React, { useState } from 'react';
-import { Col, Spinner, Toast, ToastContainer } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useHistory } from 'react-router';
+import { useDispatch, useSelector } from 'react-redux';
+import { SavedJobsAction } from '../Actions/Jobs.action';
+import Alert from 'react-bootstrap/Alert';
 
-const JobCards = ({ data }) => {
+const JobCards = ({ data, handleApplyJob }) => {
   const [state, setState] = useState({
     jobId: null,
     clickAppyButton: false,
     show: false,
+    alert: false,
   });
+  const { loading, applyResponse, error } = useSelector(
+    (state) => state.applyJobReducers
+  );
+
+  console.log('applid Action', applyResponse && applyResponse.message);
+  const dispatch = useDispatch();
+
   const history = useHistory();
-  const handleOnClickJobCard = () => {
-    history.push('/job-details');
+  const handleOnClickJobCard = (title, id) => {
+    title = title.split(' ').join('-');
+    history.push(`/job/${title}&${id}`);
+    setState({});
   };
 
-  const handleApplyJob = (id) => {
-    setTimeout(
-      setState({
-        jobId: id,
-        clickAppyButton: true,
-        show: true,
-      }),
-      10000
-    );
+  const [showAlert, setShowAlert] = useState(false);
+
+  // const handleApplyJob = (id) => {
+  //   alert(id);
+  //   dispatch(ApplyJobsAction(id));
+
+  //   setTimeout(
+  //     setState({
+  //       jobId: id,
+  //       clickAppyButton: true,
+  //       show: true,
+  //     }),
+  //     10000
+  //   );
+  // };
+
+  const handleSaveJob = (id) => {
+    dispatch(SavedJobsAction(id));
   };
+
+  useEffect(() => {
+    if (applyResponse && applyResponse.message) {
+      setTimeout(setShowAlert(true), 90000);
+    }
+  }, [applyResponse]);
 
   return (
     <div>
+      {showAlert == true && (
+        <Alert
+          variant='success'
+          onClose={() => setShowAlert(false)}
+          dismissible>
+          <span>{applyResponse.message}</span>
+        </Alert>
+      )}
+
       {data &&
         data.map((data) => {
           return (
-            <div className='job-card-wrapper job-cards'>
+            <div key={data._id} className='job-card-wrapper job-cards border'>
               <div className='job-card-inner'>
-                <div onClick={() => handleOnClickJobCard(data.id)}>
-                  <h2>{data.title}</h2>
-                  <h3>{data.companyName}</h3>
+                <div onClick={() => handleOnClickJobCard(data.title, data._id)}>
+                  <h2>{data.title ? data.title : data.job.title}</h2>
+                  <h3>MonsterIndia Pvt Ltd</h3>
                   <div className='job-card-svl'>
                     <span>
-                     <i class="fa fa-database" aria-hidden="true"></i>120000
+                      <i className='fa fa-database' aria-hidden='true'></i>
+                      {data.minSalary
+                        ? data.minSalary
+                        : data.job.minSalary} -{' '}
+                      {data.maxSalary ? data.maxSalary : data.job.maxSalary}
                     </span>
                     <span>
-                      <i className='fa fa-user'></i>25
+                      <i className='fa fa-user'></i>
+                      {data.vacancy ? data.vacancy : data.job.vacancy}
                     </span>
                     <span>
                       <i className='fa fa-map-marker'></i>
-                      {data.location}
+                      {data.city ? data.city : data.job.city}
                     </span>
                   </div>
                   <p>
@@ -53,22 +95,28 @@ const JobCards = ({ data }) => {
                       }}>
                       Skills :{' '}
                     </span>{' '}
-                    {data.skills &&
-                      data.skills.map((skills) => {
-                        return <span> {skills.name} </span>;
-                      })}
+                    {data.skills
+                      ? data.skills.map((skills) => {
+                          return <span key={skills._id}> {skills.name} ,</span>;
+                        })
+                      : data.job.skills.map((skills) => {
+                          return <span> {skills.name} ,</span>;
+                        })}
                   </p>
-                  <p>{data.description}</p>
+                  <p>
+                    {data.description ? data.description : data.job.description}
+                  </p>
                 </div>
 
                 <hr />
                 <div className='row'>
                   <div className='d-flex col-md-9'>
-                    {/* <p
+                    <p
                       className=' d-flex justify-content-start'
                       style={{ padding: '0px opx' }}>
                       Post On 2 Days Ago
                     </p>
+
                     <div style={{ margin: '0px 20px' }}>
                       <p>
                         Job Applicants :
@@ -80,20 +128,26 @@ const JobCards = ({ data }) => {
                           488
                         </span>{' '}
                       </p>
-                    </div> */}
+                    </div>
                   </div>
                   <div className='col-md-3 d-flex justify-content-end'>
-                    <button type="button" name="share" className='job-card-footer-icon'>
+                    <button
+                      type='button'
+                      name='save'
+                      onClick={(e) => handleSaveJob(data._id)}
+                      className='job-card-footer-icon'>
                       <i className='fa fa-star-o' aria-hidden='true'></i>
                     </button>
-                    <button type="button" name="save" className='job-card-footer-icon'>
+                    <button
+                      type='button'
+                      name='share'
+                      className='job-card-footer-icon'>
                       <i className='fa fa-share-alt' aria-hidden='true'></i>
                     </button>
-
                     <button
-                      onClick={(e) => handleApplyJob(data.id)}
+                      onClick={(e) => handleApplyJob(data._id)}
                       className='btn  btn-danger btn-apply d-flex justify-content-end'>
-                      {state.clickAppyButton && state.jobId === data.id ? (
+                      {state.clickAppyButton && state.jobId === data._id ? (
                         <>
                           Applying
                           <Spinner
@@ -128,31 +182,6 @@ const JobCards = ({ data }) => {
             </div>
           );
         })}
-
-      <div className='row'>
-        <Col xs={6}>
-          <ToastContainer position='bottom-end'>
-            <Toast
-              onClose={() => setState({ show: false })}
-              show={state.show}
-              delay={3000}
-              autohide>
-              <Toast.Header>
-                <img
-                  src='holder.js/20x20?text=%20'
-                  className='rounded me-2'
-                  alt=''
-                />
-                <strong className='me-auto'>Bootstrap</strong>
-                <small>11 mins ago</small>
-              </Toast.Header>
-              <Toast.Body>
-                Woohoo, you're reading this text in a Toast!
-              </Toast.Body>
-            </Toast>
-          </ToastContainer>
-        </Col>
-      </div>
     </div>
   );
 };

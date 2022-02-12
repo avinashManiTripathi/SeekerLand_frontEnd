@@ -14,11 +14,14 @@ export default function TabsComponent({ data }) {
               <Tab
                 className='tab--header-links'
                 eventKey={data.id}
+                key={data.id}
                 title={data.title}>
-                <div className='row'>
+                <div className='row' key={data.id} style={{ padding: '20px' }}>
                   {data.locations.map((localtion) => {
                     return (
-                      <div className='col-md-4 col-6 tabs-data'>
+                      <div
+                        key={localtion.id}
+                        className='col-md-3 col-6 tabs-data'>
                         {localtion.name}
                       </div>
                     );

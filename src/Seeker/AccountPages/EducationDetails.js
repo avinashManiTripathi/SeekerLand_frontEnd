@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { EducationDetailUploadAction } from '../../Actions/EducationDetail.action';
+import {
+  EducationDetailFindBySeekerIdAction,
+  EducationDetailUploadAction,
+} from '../../Actions/EducationDetail.action';
 import FormModel from '../Models/FormModel';
 
 const MyAccountEducation = (props) => {
@@ -24,9 +27,14 @@ const MyAccountEducation = (props) => {
     });
   };
 
+  const { seekerEducationDetails } = useSelector(
+    (state) => state.educationDetailFindBySeekerIdReducers
+  );
+
+  console.log('Education Details', seekerEducationDetails);
+
   const onSubmitEducationDetails = (e) => {
     e.preventDefault();
-    console.log('educa', educationDetails);
     dispatch(EducationDetailUploadAction(educationDetails));
   };
 
@@ -34,8 +42,12 @@ const MyAccountEducation = (props) => {
     setShowModel(true);
   };
 
+  useEffect(() => {
+    dispatch(EducationDetailFindBySeekerIdAction());
+  }, [dispatch]);
+
   return (
-    <div className='my-account-card shadow bg-white p-3'>
+    <div className='my-account-card  bg-white p-3'>
       <div className='row'>
         <div className='col-md-6'>
           <h2>Educational Details</h2>
@@ -45,18 +57,25 @@ const MyAccountEducation = (props) => {
             to='#'
             onClick={handleEducationDetails}
             className='d-flex justify-content-end add-link'>
-            Educational Details +
+            + Add More
           </Link>
         </div>
       </div>
-      <div className='mt-3 details'>
-        <h3>
-          Bachelor Of Computer Application (B.C.A) (Computers){' '}
-          <button className='fa fa-pencil edit edit'></button>
-        </h3>
-        <p>Babu Banarasi Das University</p>
-        <p>2019 (Full time)</p>
-      </div>
+
+      {seekerEducationDetails &&
+        seekerEducationDetails.map((education) => {
+          return (
+            <div className='mt-3 details'>
+              <h3>
+                {education.education}
+                <button className='fa fa-pencil edit edit'></button>
+              </h3>
+              <p>{education.universityName}</p>
+              <p>{education.fromDate} (Full time)</p>
+            </div>
+          );
+        })}
+
       <FormModel
         title='Add Education Details'
         show={showModel}

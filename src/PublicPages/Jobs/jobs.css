@@ -22,6 +22,8 @@
   color: #000;
   display: inline;
   margin-right: 10px;
+  font-weight: 600;
+  color: #20272d;
 }
 .job-card-inner h3 {
   font-size: 13px;
@@ -102,12 +104,15 @@ figcaption.ratings a:hover {
 }
 .project-tab #tabs .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: #0062cc;
-  background-color: transparent;
+  margin: 1px;
+  background: #14016a;
   border-color: transparent transparent #f3f3f3;
-  border-bottom: 3px solid !important;
-  font-size: 16px;
-  font-weight: bold;
+  border-bottom: unset !important;
+  border-radius: 0px !important;
+  font-size: 12px;
+  font-weight: unset !important;
+  color: #fff !important;
+  transition: 0.1s;
 }
 .project-tab .nav-link {
   border: 1px solid transparent;
