@@ -6,7 +6,7 @@ import { jobsData } from '../../jobsJSON';
 import './jobs.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { FindJobByIdAction } from '../../Actions/Jobs.action';
-import { seo } from '../../Helper/SEOHelper';
+// import { seo } from '../../Helper/SEOHelper';
 
 const JobsDetails = (props) => {
   const {  jobDetails } = useSelector(
@@ -14,12 +14,12 @@ const JobsDetails = (props) => {
   );
   const dispatch = useDispatch();
   useEffect(() => {
-    seo({
-      title: props.match.params.title,
-      metaDescription: 'With some meta description',
-    });
+    // seo({
+    //   title: props.match.params.title,
+    //   metaDescription: 'With some meta description',
+    // });
     dispatch(FindJobByIdAction(props.match.params.id));
-  }, [props.match.params.id , props.match.params.title]);
+  }, [dispatch, props.match.params.id]);
 
   return (
     <div className='container'>
