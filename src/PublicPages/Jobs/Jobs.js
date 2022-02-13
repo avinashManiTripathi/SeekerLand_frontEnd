@@ -105,7 +105,7 @@ const Jobs = (props) => {
             borderBottom: '1px solid #c5c5c5',
             borderTop: '1px solid #c5c5c5',
           }}>
-          <div className='row '>
+          <div className='row'>
             <div className='col-md-9 d-flex'>
               <div className='col-md-5'>
                 <Select

@@ -319,7 +319,7 @@ const Home = (props) => {
                       return (
                         <div key={data.id}>
                           <div
-                            class='carousel-card-slider'
+                            className='carousel-card-slider'
                             style={{ height: '150px' }}>
                             <h2>{data.title} </h2>
                             <h3>SpeckyFox Technologies</h3>
@@ -339,7 +339,7 @@ const Home = (props) => {
                       return (
                         <div key={data.id}>
                           <div
-                            class='carousel-card-slider'
+                            className='carousel-card-slider'
                             style={{ height: '150px' }}>
                             <h2>{data.title} </h2>
                             <h3>SpeckyFox Technologies</h3>

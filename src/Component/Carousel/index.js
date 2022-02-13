@@ -20,19 +20,19 @@ const CarouselSlider = (props) => {
           <button
             className='arrow-btn'
             onClick={() => sliderRef.current.slickPrev()}>
-            <i class='fa fa-angle-left' aria-hidden='true'></i>
+            <i className='fa fa-angle-left' aria-hidden='true'></i>
           </button>
           <button
             className='arrow-btn'
             onClick={() => sliderRef.current.slickNext()}>
-            <i class='fa fa-angle-right' aria-hidden='true'></i>
+            <i className='fa fa-angle-right' aria-hidden='true'></i>
           </button>
         </div>
       </div>
       <div style={{ margin: 30 }}>
         <Slider
           dots
-          dotsClass='slick-dots line-indicator'
+          dotsclassName='slick-dots line-indicator'
           ref={sliderRef}
           slidesToShow={props.slidesToShow ? props.slidesToShow : 4}
           slidesToScroll={4}

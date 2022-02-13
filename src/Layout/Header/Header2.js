@@ -44,34 +44,34 @@ const Header2 = ({ isAuthenticated, seeker }) => {
             <Link to='/' className='dropdown nav-item nav-link active'>
               <i className='fa fa-briefcase'></i>
               <span>Jobs</span>
-              <div class='dropdown-content'>
+              <div className='dropdown-content'>
                 <ul
-                  class='list-group'
+                  className='list-group'
                   style={{
                     listStyleType: 'none',
                   }}>
                   <li>
-                    <Link class='dropdown-item' to='/java-jobs-in-noida'>
+                    <Link className='dropdown-item' to='/java-jobs-in-noida'>
                       Jobs By Location
                     </Link>
                   </li>
                   <li>
-                    <Link class='dropdown-item' to='#'>
+                    <Link className='dropdown-item' to='#'>
                       Jobs By Role
                     </Link>
                   </li>
                   <li>
-                    <Link class='dropdown-item' to='/'>
+                    <Link className='dropdown-item' to='/'>
                       Jobs By Category
                     </Link>
                   </li>
                   <li>
-                    <Link class='dropdown-item' to='/'>
+                    <Link className='dropdown-item' to='/'>
                       Jobs By Country
                     </Link>
                   </li>
                   <li>
-                    <Link class='dropdown-item' to='/'>
+                    <Link className='dropdown-item' to='/'>
                       Jobs By Companies
                     </Link>
                   </li>
@@ -111,21 +111,21 @@ const Header2 = ({ isAuthenticated, seeker }) => {
             {isAuthenticated ? (
               <Link to='#' className='dropdown nav-item nav-link active border'>
                 <span> {capitalize(seeker.firstName)}</span>
-                <div class='dropdown-content'>
+                <div className='dropdown-content'>
                   <ul
-                    class='list-group'
+                    className='list-group'
                     style={{
                       listStyleType: 'none',
                     }}>
                     <li>
-                      <Link class='dropdown-item' to='/dashboard'>
+                      <Link className='dropdown-item' to='/dashboard'>
                         My Profile
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        class='dropdown-item'
+                        className='dropdown-item'
                         onClick={onClickLogout}
                         to='/'>
                         log out

@@ -28,9 +28,9 @@ const SignIn = (props) => {
     dispatch(LoginAction(seeker, history));
   };
   return (
-    <Container>
-      <Row>
-        <Col xs={12} md={6}>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-6'>
           <div className='signin-sidebar-content '>
             <h4 className='mb-4'>
               Create, <span> Build, Share </span>& Find Better Candidates
@@ -73,7 +73,7 @@ const SignIn = (props) => {
               </p>
             </div>
           </div>
-        </Col>
+        </div>
 
         <div className='col-md-6'>
           <div className='sigin-wrapper bg-white'>
@@ -227,8 +227,8 @@ const SignIn = (props) => {
             </Form>
           </div>
         </Col> */}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 

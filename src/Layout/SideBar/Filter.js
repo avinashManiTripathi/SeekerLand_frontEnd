@@ -20,8 +20,8 @@ const Filter = (props) => {
   const onInputClick = (e, title) => {
 
    
-    setFilter([...filter,[e.target.name],e.target.value])
-    console.log('filter ==' , filter)
+    // setFilter([...filter,[e.target.name] : e.target.value])
+    // console.log('filter ==' , filter)
   
 
       
