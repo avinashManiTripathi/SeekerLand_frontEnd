@@ -41,43 +41,43 @@ const Header2 = ({ isAuthenticated, seeker }) => {
               <span>Home</span>
             </Link>
 
-            <Link to='/' className='dropdown nav-item nav-link active'>
+            {/* <Link to='/' className='dropdown nav-item nav-link active'>
               <i className='fa fa-briefcase'></i>
               <span>Jobs</span>
-              <div className='dropdown-content'>
+              <div class='dropdown-content'>
                 <ul
-                  className='list-group'
+                  class='list-group'
                   style={{
                     listStyleType: 'none',
                   }}>
                   <li>
-                    <Link className='dropdown-item' to='/java-jobs-in-noida'>
+                    <Link class='dropdown-item' to='/java-jobs-in-noida'>
                       Jobs By Location
                     </Link>
                   </li>
                   <li>
-                    <Link className='dropdown-item' to='#'>
+                    <Link class='dropdown-item' to='#'>
                       Jobs By Role
                     </Link>
                   </li>
                   <li>
-                    <Link className='dropdown-item' to='/'>
+                    <Link class='dropdown-item' to='/'>
                       Jobs By Category
                     </Link>
                   </li>
                   <li>
-                    <Link className='dropdown-item' to='/'>
+                    <Link class='dropdown-item' to='/'>
                       Jobs By Country
                     </Link>
                   </li>
                   <li>
-                    <Link className='dropdown-item' to='/'>
+                    <Link class='dropdown-item' to='/'>
                       Jobs By Companies
                     </Link>
                   </li>
                 </ul>
               </div>
-            </Link>
+            </Link> */}
 
             <Link to='/recruiters' className='nav-item nav-link'>
               <i className='fa fa-users'></i>
@@ -111,21 +111,21 @@ const Header2 = ({ isAuthenticated, seeker }) => {
             {isAuthenticated ? (
               <Link to='#' className='dropdown nav-item nav-link active border'>
                 <span> {capitalize(seeker.firstName)}</span>
-                <div className='dropdown-content'>
+                <div class='dropdown-content'>
                   <ul
-                    className='list-group'
+                    class='list-group'
                     style={{
                       listStyleType: 'none',
                     }}>
                     <li>
-                      <Link className='dropdown-item' to='/dashboard'>
+                      <Link class='dropdown-item' to='/dashboard'>
                         My Profile
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        className='dropdown-item'
+                        class='dropdown-item'
                         onClick={onClickLogout}
                         to='/'>
                         log out
