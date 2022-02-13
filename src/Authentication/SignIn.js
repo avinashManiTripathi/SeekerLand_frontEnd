@@ -3,7 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { LoginAction } from '../Actions/Registration.action';
-import { Link } from 'react-router-dom';
 import './index.css';
 
 const SignIn = (props) => {
@@ -136,9 +135,9 @@ const SignIn = (props) => {
                 </div>
                 <div className='' style={{ marginLeft: '20px' }}>
                   {' '}
-                  <Link to="/forget-password" id='forgot'>
+                  <a href='#' id='forgot'>
                     Forgot Password?
-                  </Link>{' '}
+                  </a>{' '}
                 </div>
               </div>{' '}
               <button
@@ -148,9 +147,9 @@ const SignIn = (props) => {
               </button>
               <div className='text-center pt-3 text-muted'>
                 Not a member?{' '}
-                <Link to="/signup" className='form-control'>
+                <a href='#' className='form-control'>
                   Sign up
-                </Link>
+                </a>
               </div>
             </form>
           </div>
