@@ -12,7 +12,7 @@ const JobCards = ({ data, handleApplyJob }) => {
     show: false,
     alert: false,
   });
-  const { loading, applyResponse, error } = useSelector(
+  const { applyResponse } = useSelector(
     (state) => state.applyJobReducers
   );
 
@@ -54,7 +54,7 @@ const JobCards = ({ data, handleApplyJob }) => {
 
   return (
     <div>
-      {showAlert == true && (
+      {showAlert === true && (
         <Alert
           variant='success'
           onClose={() => setShowAlert(false)}

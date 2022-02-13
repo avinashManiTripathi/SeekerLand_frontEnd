@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Spinner, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import Select from 'react-select';
-import CardSlider from '../../Component/CardSlider';
+// import CardSlider from '../../Component/CardSlider';
 import CarouselSlider from '../../Component/Carousel';
 import Clock from '../../Component/Clock';
 import TabsComponent from '../../Component/TabsComponent';
 import { FindJobVacanciesBy } from '../../FindJobVacanciesBy';
 import { jobsData } from '../../jobsJSON';
-import companies from '../../Companies.json';
+// import companies from '../../Companies.json';
 
 import SideBar, {
   // TopSideBarJobs,
   TopSideBarMenu,
 } from '../../Layout/SideBar/SideBar';
-import Slider from '../../Layout/Slider/Slider';
+// import Slider from '../../Layout/Slider/Slider';
 // import { PeopleAlsoConsider } from '../../PeopleAlsoConsider';
 import {
   JobsbyCategory,

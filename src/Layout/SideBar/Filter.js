@@ -3,15 +3,15 @@ import { Offcanvas, Button } from 'react-bootstrap';
 import './filter.css';
 import { filterData } from './filterData';
 
-const Filter = (props) => {
+const Filter = () => {
   const [show, setShow] = useState(false);
-  const [filter, setFilter] = useState([]);
+  // const [filter, setFilter] = useState([]);
 
-  const [jobType, setJobType] = useState([null]);
-  // const [location, setLocatiion] = useState([]);
-  const [salary, setSalary] = useState([null]);
-  const [industries, setIndustries] = useState([null]);
-  const [topCompanies, setTopCompanies] = useState([null]);
+  // const [jobType, setJobType] = useState([null]);
+  // // const [location, setLocatiion] = useState([]);
+  // const [salary, setSalary] = useState([null]);
+  // const [industries, setIndustries] = useState([null]);
+  // const [topCompanies, setTopCompanies] = useState([null]);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);

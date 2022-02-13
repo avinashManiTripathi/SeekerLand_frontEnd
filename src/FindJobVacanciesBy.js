@@ -1,180 +1,214 @@
 export const FindJobVacanciesBy = [
   {
-    id: '1',
+    id: '8881118',
     title: 'Skills',
     locations: [
       {
-        id: '1',
+        key: '1',
         name: 'Software Engineering',
       },
 
       {
-        id: '2',
+        key: '2',
         name: 'Marketng Manager ',
       },
       {
-        id: '3',
+        key: '3',
         name: 'Sales Manager ',
       },
       {
-        id: ' 4',
+        key: ' 4',
         name: 'BPO ',
       },
       {
-        id: '4',
+        key: '4',
         name: 'Sales',
       },
       {
-        id: '6',
+        key: '6',
         name: 'Call Manager',
       },
       {
-        id: '7',
+        key: '7',
         name: 'Web Developer Designer ',
       },
       {
-        id: '8',
+        key: '8ff',
         name: 'BackEnd Developer',
       },
       {
-        id: '1',
+        key: '1ff',
         name: 'Software Engineering',
       },
 
       {
-        id: '2',
+        key: '2ff',
         name: 'Marketng Manager ',
       },
       {
-        id: '3',
+        key: '3ff',
         name: 'Sales Manager ',
       },
       {
-        id: ' 4',
+        key: '4ff',
         name: 'BPO ',
       },
       {
-        id: '4',
+        key: '5fdf',
         name: 'Sales',
       },
       {
-        id: '6',
+        key: '6424',
         name: 'Call Manager',
       },
       {
-        id: '7',
+        key: '237',
         name: 'Web Developer Designer ',
       },
       {
-        id: '8',
+        key: '2348',
         name: 'BackEnd Developer',
       },
       {
+        key: '2349',
         name: 'Acquisition skills',
       },
       {
+        key: '24210',
         name: 'Analytical ability',
       },
       {
+        key: '11423',
         name: 'Adaptability',
       },
       {
+        key: '1224',
         name: 'Execution willingness',
       },
       {
+        key: '1342',
         name: 'Resilience',
       },
       {
+        key: '1424',
         name: 'Advice ability',
       },
       {
+        key: '1542',
         name: 'Relationship Management / Networks',
       },
       {
+        key: '16234',
         name: 'Charisma',
       },
       {
+        key: '1247',
         name: 'Discipline',
       },
       {
+        key: '1842',
         name: 'Assertiveness',
       },
       {
+        key: '1924',
         name: 'Empathy',
       },
       {
+        key: '2420',
         name: 'Commitment and dedication',
       },
       {
+        key: '2124',
         name: 'Decisiveness',
       },
       {
+        key: '222234',
         name: 'Give feedback',
       },
       {
+        key: '232',
         name: 'Flexibility',
       },
       {
+        key: '2442',
         name: 'Self-reflection ability',
       },
       {
+        key: '2524',
         name: 'Leadership',
       },
       {
+        key: '2624',
         name: 'Holistic thinking',
       },
       {
+        key: '2724',
         name: 'Patience',
       },
       {
+        key: '2824',
         name: 'Gender competence / diversity',
       },
       {
+        key: '28dd24',
         name: 'Credibility',
       },
       {
+        key: '2924',
         name: 'Helpfulness',
       },
       {
-        name: 'Identification with value system / tasks',
+        key: '3024',
+        name: 'keyentification with value system / tasks',
       },
       {
+        key: '31424',
         name: 'Initiative and energy',
       },
       {
+        key: '32242',
         name: 'Ability to integrate',
       },
       {
+        key: '3324',
         name: 'Intercultural Competence',
       },
       {
+        key: '3442',
         name: 'Communication skills',
       },
       {
+        key: '3524',
         name: 'Conflict resolution ability',
       },
       {
+        key: '3624',
         name: 'Concept Development',
       },
       {
+        key: '342247',
         name: 'Ability to cooperate',
       },
       {
+        key: '38',
         name: 'Creativity Techniques',
       },
       {
+        key: '39',
         name: 'Critical faculties',
       },
       {
+        key: '40',
         name: 'Customer focus',
       },
       {
+        key: '41',
         name: 'Lifelong learning',
       },
     ],
   },
   {
-    id: '2',
+    id: '8889908',
     title: 'Localtions',
     locations: [
       {
@@ -324,311 +358,231 @@ export const FindJobVacanciesBy = [
     ],
   },
   {
-    id: '3',
+    id: '2288',
     title: 'Industry',
     locations: [
       {
-        id: '1',
+        key: '1123',
         name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '2',
+        key: '2333333',
         name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '3',
+        key: '33333',
         name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: ' 4',
+        key: ' 43232',
         name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '4',
+        key: '4834',
         name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '6',
+        key: '634424',
         name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '7',
+        key: 'dsf7',
         name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '8',
+        key: '8535',
         name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
   {
-    id: '4',
+    key: '4',
     title: 'Functions',
     locations: [
       {
-        id: '1',
+        key: '1',
         name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '2',
+        key: '2',
         name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '3',
+        key: '3',
         name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: ' 4',
+        key: ' 4',
         name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '4',
+        key: '4',
         name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '6',
+        key: '6',
         name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '7',
+        key: '7',
         name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '8',
+        key: '8',
         name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
   {
-    id: '5',
+    id: '568',
     title: 'Roles',
     locations: [
       {
-        id: '1',
+        key: '18554353',
         name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '2',
+        key: '2543',
         name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '3',
+        key: '35345',
         name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: ' 4',
+        key: ' 4gdgg',
         name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '4',
+        key: '4rew',
         name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '6',
+        key: 'ada6',
         name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '7',
+        key: '7add',
         name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '8',
+        key: '8das',
         name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
   {
-    id: '6',
+    id: '8998',
     title: 'Company',
     locations: [
       {
-        id: '1',
-        name: 'SpeckyFox Pvt Ltd',
+        key: '1SD',
+        name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '2',
-        name: 'MonsterIndia',
+        key: '2FS',
+        name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '3',
-        name: 'IZS Techocrats',
+        key: '3DW',
+        name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: ' 4',
-        name: 'Wipro',
+        key: 'DWW4',
+        name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '4',
-        name: 'General Electric',
+        key: '4KFDKS',
+        name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '6',
-        name: 'Wal-Mart Stores',
+        key: '6JKDS',
+        name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '7',
-        name: 'Berkshire Hathaway ',
+        key: '7DSDS',
+        name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '8',
-        name: 'JP Morgan',
-      },
-      {
-        id: '9',
-        name: 'Microsoft',
-      },
-      {
-        id: '10',
-        name: 'Google',
-      },
-      {
-        id: '11',
-        name: 'Twitter',
-      },
-      {
-        id: '12',
-        name: 'LinkedIn',
-      },
-      {
-        id: '13',
-        name: 'You Tube',
-      },
-      {
-        id: '10',
-        name: 'Berkshire Hathaway',
-      },
-      {
-        id: '11',
-        name: 'American International Group',
-      },
-      {
-        id: '12',
-        name: 'United Technologies',
-      },
-      {
-        id: '13',
-        name: 'Danaher Corporation',
-      },
-      {
-        id: '13',
-        name: 'Whole Foods Market, Inc.',
-      },
-      {
-        id: '10',
-        name: 'Aramark Holdings Corporation',
-      },
-      {
-        id: '11',
-        name: 'Arrow Electronics, Inc',
-      },
-      {
-        id: '12',
-        name: 'Whirlpool Corporation',
-      },
-      {
-        id: '13',
-        name: 'Global Partners LP',
-      },
-      {
-        id: '13',
-        name: 'Whole Foods Market, Inc.',
-      },
-      {
-        id: '10',
-        name: 'Harley-Davidson, Inc',
-      },
-      {
-        id: '11',
-        name: 'Allergan, Inc',
-      },
-      {
-        id: '12',
-        name: 'GameStop Corp',
-      },
-      {
-        id: '13',
-        name: 'Principal Financial Group, Inc',
+        key: '8DS',
+        name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
   {
-    id: '7',
+    id: '999',
     title: 'Countries',
     locations: [
       {
-        id: '1',
+        key: '19099',
         name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '2',
+        key: '2AS',
         name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '3',
+        key: '3SASSAS',
         name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: ' 4',
-        name: 'Laravel jobs in Delhi/NCR',
-      },
-      {
-        id: '4',
+        key: ' 4SSASAD',
         name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '6',
+        key: '6DSD',
         name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '7',
+        key: '7CSCSC',
         name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '8',
+        key: '8CSCS',
         name: 'hibernate jobs in Delhi/NCR',
       },
     ],
   },
   {
-    id: '8',
+    id: '8888',
     title: 'TOP MNC JObs',
     locations: [
       {
-        id: '1',
+        key: '1lj',
         name: 'java jobs in Delhi/NCR',
       },
 
       {
-        id: '2',
+        key: '2df',
         name: 'hibernate jobs in Delhi/NCR',
       },
       {
-        id: '3',
+        key: '3adds',
         name: 'Sql jobs in Delhi/NCR',
       },
       {
-        id: ' 4',
+        key: 'fsfs',
         name: 'Laravel jobs in Delhi/NCR',
       },
       {
-        id: '4',
+        key: 'RRW',
         name: 'java jobs in Delhi/NCR',
       },
       {
-        id: '6',
+        key: '6SDS',
         name: 'php jobs in Delhi/NCR',
       },
       {
-        id: '7',
+        key: '7$FS',
         name: 'spring jobs in Delhi/NCR',
       },
       {
-        id: '8',
+        key: '8DSDD',
         name: 'hibernate jobs in Delhi/NCR',
       },
     ],

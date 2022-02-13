@@ -9,7 +9,7 @@ import { FindJobByIdAction } from '../../Actions/Jobs.action';
 import { seo } from '../../Helper/SEOHelper';
 
 const JobsDetails = (props) => {
-  const { loading, jobDetails } = useSelector(
+  const {  jobDetails } = useSelector(
     (state) => state.findJobByIdReducers
   );
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const JobsDetails = (props) => {
       metaDescription: 'With some meta description',
     });
     dispatch(FindJobByIdAction(props.match.params.id));
-  }, [dispatch]);
+  }, [props.match.params.id , props.match.params.title]);
 
   return (
     <div className='container'>
